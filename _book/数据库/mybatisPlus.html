@@ -1,0 +1,1226 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>MybatisPlus · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        <li class="header">数据库</li>
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    Mybaties与Redies简介.Assets
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="mybaties与Redies简介.html">
+            
+                <a href="mybaties与Redies简介.html">
+            
+                    
+                    Mybaties与Redies简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    Mybatis.Assets
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="mybatis.html">
+            
+                <a href="mybatis.html">
+            
+                    
+                    Mybatis
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" >
+            
+                <span>
+            
+                    
+                    MybatisPlus.Assets
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.7" data-path="mybatisPlus.html">
+            
+                <a href="mybatisPlus.html">
+            
+                    
+                    MybatisPlus
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" >
+            
+                <span>
+            
+                    
+                    Mysql.Assets
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="mysql.html">
+            
+                <a href="mysql.html">
+            
+                    
+                    Mysql
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" >
+            
+                <span>
+            
+                    
+                    索引.Assets
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >MybatisPlus</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h2 id="&#x7279;&#x6027;">&#x7279;&#x6027;</h2>
+<p>&#x65E0;&#x4FB5;&#x5165;&#xFF1A;&#x53EA;&#x505A;&#x589E;&#x5F3A;&#x4E0D;&#x505A;&#x6539;&#x53D8;&#xFF0C;&#x5F15;&#x5165;&#x5B83;&#x4E0D;&#x4F1A;&#x5BF9;&#x73B0;&#x6709;&#x5DE5;&#x7A0B;&#x4EA7;&#x751F;&#x5F71;&#x54CD;&#xFF0C;&#x5982;&#x4E1D;&#x822C;&#x987A;&#x6ED1; </p>
+<p>&#x635F;&#x8017;&#x5C0F;&#xFF1A;&#x542F;&#x52A8;&#x5373;&#x4F1A;&#x81EA;&#x52A8;&#x6CE8;&#x5165;&#x57FA;&#x672C; CURD&#xFF0C;&#x6027;&#x80FD;&#x57FA;&#x672C;&#x65E0;&#x635F;&#x8017;&#xFF0C;&#x76F4;&#x63A5;&#x9762;&#x5411;&#x5BF9;&#x8C61;&#x64CD;&#x4F5C;&#xFF0C; BaseMapper  </p>
+<p><strong>&#x5F3A;&#x5927;&#x7684; CRUD &#x64CD;&#x4F5C;&#xFF1A;&#x5185;&#x7F6E;&#x901A;&#x7528; Mapper&#x3001;&#x901A;&#x7528; Service&#xFF0C;&#x4EC5;&#x4EC5;&#x901A;&#x8FC7;&#x5C11;&#x91CF;&#x914D;&#x7F6E;&#x5373;&#x53EF;&#x5B9E;&#x73B0;&#x5355;&#x8868;&#x5927;&#x90E8;&#x5206; CRUD &#x64CD;&#x4F5C;&#xFF0C;&#x66F4;&#x6709;&#x5F3A;&#x5927;&#x7684;&#x6761;&#x4EF6;&#x6784;&#x9020;&#x5668;&#xFF0C;&#x6EE1;&#x8DB3;&#x5404;&#x7C7B;&#x4F7F;&#x7528;&#x9700;&#x6C42;, &#x4EE5;&#x540E;&#x7B80;&#x5355;&#x7684;CRUD&#x64CD;&#x4F5C;&#xFF0C;&#x5B83;&#x4E0D;&#x7528;&#x81EA;&#x5DF1;&#x7F16;&#x5199; &#x4E86;</strong>&#xFF01; </p>
+<p>&#x652F;&#x6301; Lambda &#x5F62;&#x5F0F;&#x8C03;&#x7528;&#xFF1A;&#x901A;&#x8FC7; Lambda &#x8868;&#x8FBE;&#x5F0F;&#xFF0C;&#x65B9;&#x4FBF;&#x7684;&#x7F16;&#x5199;&#x5404;&#x7C7B;&#x67E5;&#x8BE2;&#x6761;&#x4EF6;&#xFF0C;&#x65E0;&#x9700;&#x518D;&#x62C5;&#x5FC3;&#x5B57;&#x6BB5;&#x5199;&#x9519; </p>
+<p>&#x652F;&#x6301;&#x4E3B;&#x952E;&#x81EA;&#x52A8;&#x751F;&#x6210;&#xFF1A;&#x652F;&#x6301;&#x591A;&#x8FBE; 4 &#x79CD;&#x4E3B;&#x952E;&#x7B56;&#x7565;&#xFF08;&#x5185;&#x542B;&#x5206;&#x5E03;&#x5F0F;&#x552F;&#x4E00; ID &#x751F;&#x6210;&#x5668; - Sequence&#xFF09;&#xFF0C;&#x53EF;&#x81EA;&#x7531;&#x914D; &#x7F6E;&#xFF0C;&#x5B8C;&#x7F8E;&#x89E3;&#x51B3;&#x4E3B;&#x952E;&#x95EE;&#x9898; </p>
+<p>&#x652F;&#x6301; ActiveRecord &#x6A21;&#x5F0F;&#xFF1A;&#x652F;&#x6301; ActiveRecord &#x5F62;&#x5F0F;&#x8C03;&#x7528;&#xFF0C;&#x5B9E;&#x4F53;&#x7C7B;&#x53EA;&#x9700;&#x7EE7;&#x627F; Model &#x7C7B;&#x5373;&#x53EF;&#x8FDB;&#x884C;&#x5F3A;&#x5927; &#x7684; CRUD &#x64CD;&#x4F5C; </p>
+<p>&#x652F;&#x6301;&#x81EA;&#x5B9A;&#x4E49;&#x5168;&#x5C40;&#x901A;&#x7528;&#x64CD;&#x4F5C;&#xFF1A;&#x652F;&#x6301;&#x5168;&#x5C40;&#x901A;&#x7528;&#x65B9;&#x6CD5;&#x6CE8;&#x5165;&#xFF08; Write once, use anywhere &#xFF09; </p>
+<p><strong>&#x5185;&#x7F6E;&#x4EE3;&#x7801;&#x751F;&#x6210;&#x5668;&#xFF1A;&#x91C7;&#x7528;&#x4EE3;&#x7801;&#x6216;&#x8005; Maven &#x63D2;&#x4EF6;&#x53EF;&#x5FEB;&#x901F;&#x751F;&#x6210; Mapper &#x3001; Model &#x3001; Service &#x3001; Controller &#x5C42;&#x4EE3;&#x7801;&#xFF0C;&#x652F;&#x6301;&#x6A21;&#x677F;&#x5F15;&#x64CE;&#xFF0C;&#x66F4;&#x6709;&#x8D85;&#x591A;&#x81EA;&#x5B9A;&#x4E49;&#x914D;&#x7F6E;&#x7B49;&#x60A8;&#x6765;&#x4F7F;&#x7528;&#xFF08;&#x81EA;&#x52A8;&#x5E2E;&#x4F60;&#x751F;&#x6210;&#x4EE3;&#x7801;&#xFF09; </strong></p>
+<p><strong>&#x5185;&#x7F6E;&#x5206;&#x9875;&#x63D2;&#x4EF6;&#xFF1A;&#x57FA;&#x4E8E; MyBatis &#x7269;&#x7406;&#x5206;&#x9875;&#xFF0C;&#x5F00;&#x53D1;&#x8005;&#x65E0;&#x9700;&#x5173;&#x5FC3;&#x5177;&#x4F53;&#x64CD;&#x4F5C;&#xFF0C;&#x914D;&#x7F6E;&#x597D;&#x63D2;&#x4EF6;&#x4E4B;&#x540E;&#xFF0C;&#x5199;&#x5206;&#x9875;&#x7B49;&#x540C; &#x4E8E;&#x666E;&#x901A; List &#x67E5;&#x8BE2; &#x5206;&#x9875;&#x63D2;&#x4EF6;&#x652F;&#x6301;&#x591A;&#x79CD;&#x6570;&#x636E;&#x5E93;&#xFF1A;</strong></p>
+<p>&#x652F;&#x6301; MySQL&#x3001;MariaDB&#x3001;Oracle&#x3001;DB2&#x3001;H2&#x3001;HSQL&#x3001;SQLite&#x3001; Postgre&#x3001;SQLServer &#x7B49;&#x591A;&#x79CD;&#x6570;&#x636E;&#x5E93; </p>
+<p>&#x5185;&#x7F6E;&#x6027;&#x80FD;&#x5206;&#x6790;&#x63D2;&#x4EF6;&#xFF1A;&#x53EF;&#x8F93;&#x51FA; Sql &#x8BED;&#x53E5;&#x4EE5;&#x53CA;&#x5176;&#x6267;&#x884C;&#x65F6;&#x95F4;&#xFF0C;&#x5EFA;&#x8BAE;&#x5F00;&#x53D1;&#x6D4B;&#x8BD5;&#x65F6;&#x542F;&#x7528;&#x8BE5;&#x529F;&#x80FD;&#xFF0C;&#x80FD;&#x5FEB;&#x901F;&#x63EA;&#x51FA;&#x6162; &#x67E5;&#x8BE2; </p>
+<p>&#x5185;&#x7F6E;&#x5168;&#x5C40;&#x62E6;&#x622A;&#x63D2;&#x4EF6;&#xFF1A;&#x63D0;&#x4F9B;&#x5168;&#x8868; delete &#x3001; update &#x64CD;&#x4F5C;&#x667A;&#x80FD;&#x5206;&#x6790;&#x963B;&#x65AD;&#xFF0C;&#x4E5F;&#x53EF;&#x81EA;&#x5B9A;&#x4E49;&#x62E6;&#x622A;&#x89C4;&#x5219;&#xFF0C;&#x9884;&#x9632;&#x8BEF;</p>
+<p><strong>id, gmt_create, gmt_modified&#x3002;
+&#x8BF4;&#x660E;&#xFF1A;&#x5176;&#x4E2D; id &#x5FC5;&#x4E3A;&#x4E3B;&#x952E;&#xFF0C;&#x7C7B;&#x578B;&#x4E3A; unsigned bigint&#x3001;&#x5355;&#x8868;&#x65F6;&#x81EA;&#x589E;&#x3001;&#x6B65;&#x957F;&#x4E3A; 1&#x3002;</strong></p>
+<p><strong>gmt_create,gmt_modified &#x7684;&#x7C7B;&#x578B;&#x5747;&#x4E3A; date_time &#x7C7B;&#x578B;&#xFF0C;&#x524D;&#x8005;&#x73B0;&#x5728;&#x65F6;&#x8868;&#x793A;&#x4E3B;&#x52A8;&#x521B;&#x5EFA;&#xFF0C;&#x540E;&#x8005;&#x8FC7;&#x53BB;&#x5206;&#x8BCD;&#x8868;&#x793A;&#x88AB;
+&#x52A8;&#x66F4;&#x65B0;&#x3002;</strong></p>
+<p>eg&#xFF1A;</p>
+<pre><code>create table `test`(
+        `id` bigint unsigned not null auto_increment,
+        `gmt_create` datetime null default current_timestamp,
+        `gmt_modified` datetime null default current_timestamp on update current_timestamp,
+        primary key(`id`)
+        );
+
+on update current_timestamp &#x6709;&#x6570;&#x636E;&#x66F4;&#x6539;&#x65F6;&#x81EA;&#x52A8;&#x8BB0;&#x5F55;&#x4FEE;&#x6539;&#x65F6;&#x95F4;&#xFF0C;&#x8BB0;&#x5F55;&#x7684;&#x662F;&#x4FEE;&#x6539;&#x7684;&#x65F6;&#x95F4;&#xFF0C;&#x4E0D;&#x662F;&#x63D0;&#x4EA4;&#x7684;&#x65F6;&#x95F4;&#xFF0C;&#x4E0D;&#x80FD;&#x7528;&#x6765;&#x505A;&#x540C;&#x6B65;
+</code></pre><h2 id="&#x9879;&#x76EE;&#x6784;&#x5EFA;">&#x9879;&#x76EE;&#x6784;&#x5EFA;</h2>
+<h4 id="&#x521D;&#x59CB;&#x5316;&#x9879;&#x76EE;">&#x521D;&#x59CB;&#x5316;&#x9879;&#x76EE;</h4>
+<p>&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x7A7A;&#x7684; Spring Boot &#x5DE5;&#x7A0B;&#xFF08;&#x5DE5;&#x7A0B;&#x5C06;&#x4EE5; H2 &#x4F5C;&#x4E3A;&#x9ED8;&#x8BA4;&#x6570;&#x636E;&#x5E93;&#x8FDB;&#x884C;&#x6F14;&#x793A;&#xFF09;</p>
+<ol>
+<li>&#x521B;&#x5EFA;&#x6570;&#x636E;&#x5E93; mybatis_plus</li>
+<li>&#x521B;&#x5EFA;user&#x8868;</li>
+<li><p>&#x53EF;&#x4EE5;&#x4F7F;&#x7528; <a href="https://start.spring.io/" target="_blank">Spring Initializer</a> &#x5FEB;&#x901F;&#x521D;&#x59CB;&#x5316;&#x4E00;&#x4E2A; Spring Boot &#x5DE5;&#x7A0B;</p>
+<p>4&#x3001;&#x5BFC;&#x5165;&#x4F9D;&#x8D56;</p>
+</li>
+</ol>
+<pre><code>&lt;!-- &#x6570;&#x636E;&#x5E93;&#x9A71;&#x52A8; --&gt;
+&lt;dependency&gt;
+&lt;groupId&gt;mysql&lt;/groupId&gt;
+&lt;artifactId&gt;mysql-connector-java&lt;/artifactId&gt;
+&lt;/dependency&gt;
+&lt;!-- lombok --&gt;
+&lt;dependency&gt;
+&lt;groupId&gt;org.projectlombok&lt;/groupId&gt;
+&lt;artifactId&gt;lombok&lt;/artifactId&gt;
+&lt;/dependency&gt;
+&lt;!-- mybatis-plus --&gt;
+&lt;!-- mybatis-plus &#x662F;&#x81EA;&#x5DF1;&#x5F00;&#x53D1;&#xFF0C;&#x5E76;&#x975E;&#x5B98;&#x65B9;&#x7684;&#xFF01; --&gt;
+&lt;dependency&gt;
+&lt;groupId&gt;com.baomidou&lt;/groupId&gt;
+&lt;artifactId&gt;mybatis-plus-boot-starter&lt;/artifactId&gt;
+&lt;version&gt;3.0.5&lt;/version&gt;
+&lt;/dependency&gt;
+</code></pre><p>&#x8BF4;&#x660E;&#xFF1A;&#x6211;&#x4EEC;&#x4F7F;&#x7528; mybatis-plus &#x53EF;&#x4EE5;&#x8282;&#x7701;&#x6211;&#x4EEC;&#x5927;&#x91CF;&#x7684;&#x4EE3;&#x7801;&#xFF0C;&#x5C3D;&#x91CF;&#x4E0D;&#x8981;&#x540C;&#x65F6;&#x5BFC;&#x5165; mybatis &#x548C; mybatisplus&#xFF01;&#x7248;&#x672C;&#x7684;&#x5DEE;&#x5F02;&#xFF01;</p>
+<p>5&#x3001;&#x8FDE;&#x63A5;&#x6570;&#x636E;&#x5E93;&#xFF01;&#x8FD9;&#x4E00;&#x6B65;&#x548C; mybatis &#x76F8;&#x540C;&#xFF01;</p>
+<pre><code># mysql 5 &#x9A71;&#x52A8;&#x4E0D;&#x540C; com.mysql.jdbc.Driver
+# mysql 8 &#x9A71;&#x52A8;&#x4E0D;&#x540C;com.mysql.cj.jdbc.Driver&#x3001;&#x9700;&#x8981;&#x589E;&#x52A0;&#x65F6;&#x533A;&#x7684;&#x914D;&#x7F6E;
+serverTimezone=GMT%2B8
+spring.datasource.username=root
+spring.datasource.password=123456
+spring.datasource.url=jdbc:mysql://localhost:3306/mybatis_plus?
+useSSL=false&amp;useUnicode=true&amp;characterEncoding=utf-8&amp;serverTimezone=GMT%2B8
+spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
+</code></pre><p>6&#x3001;&#x4F20;&#x7EDF;&#x65B9;&#x5F0F;pojo-dao&#xFF08;&#x8FDE;&#x63A5;mybatis&#xFF0C;&#x914D;&#x7F6E;mapper.xml&#x6587;&#x4EF6;&#xFF09;-service-controller </p>
+<p>&#x200B;        &#x7528;&#x4E86;mybatis-plus &#x4E4B;&#x540E;</p>
+<ul>
+<li>pojo</li>
+</ul>
+<pre><code>@Data
+@AllArgsConstructor
+@NoArgsConstructor
+public class User {
+private Long id;
+private String name;
+private Integer age;
+private String email;
+}
+</code></pre><ul>
+<li>mapper&#x63A5;&#x53E3;</li>
+</ul>
+<pre><code>package com.kuang.mapper;
+import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+import com.kuang.pojo.User;
+import org.springframework.stereotype.Repository;
+// &#x5728;&#x5BF9;&#x5E94;&#x7684;Mapper&#x4E0A;&#x9762;&#x7EE7;&#x627F;&#x57FA;&#x672C;&#x7684;&#x7C7B; BaseMapper
+@Repository // &#x4EE3;&#x8868;&#x6301;&#x4E45;&#x5C42;
+public interface UserMapper extends BaseMapper&lt;User&gt; {
+// &#x6240;&#x6709;&#x7684;CRUD&#x64CD;&#x4F5C;&#x90FD;&#x5DF2;&#x7ECF;&#x7F16;&#x5199;&#x5B8C;&#x6210;&#x4E86;
+// &#x4F60;&#x4E0D;&#x9700;&#x8981;&#x50CF;&#x4EE5;&#x524D;&#x7684;&#x914D;&#x7F6E;&#x4E00;&#x5927;&#x5806;&#x6587;&#x4EF6;&#x4E86;&#xFF01;
+}
+</code></pre><p>&#x6CE8;&#x610F;&#x70B9;&#xFF0C;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x5728;&#x4E3B;&#x542F;&#x52A8;&#x7C7B;&#x4E0A;&#x53BB;&#x626B;&#x63CF;&#x6211;&#x4EEC;&#x7684;mapper&#x5305;&#x4E0B;&#x7684;&#x6240;&#x6709;&#x63A5;&#x53E3; @MapperScan(&quot;com.kuang.mapper&quot;)</p>
+<ul>
+<li>&#x6D4B;&#x8BD5;&#x7C7B;&#x4E2D;&#x6D4B;&#x8BD5;</li>
+</ul>
+<pre><code>@SpringBootTest
+class MybatisPlusApplicationTests {
+// &#x7EE7;&#x627F;&#x4E86;BaseMapper&#xFF0C;&#x6240;&#x6709;&#x7684;&#x65B9;&#x6CD5;&#x90FD;&#x6765;&#x81EA;&#x5DF1;&#x7236;&#x7C7B;
+// &#x6211;&#x4EEC;&#x4E5F;&#x53EF;&#x4EE5;&#x7F16;&#x5199;&#x81EA;&#x5DF1;&#x7684;&#x6269;&#x5C55;&#x65B9;&#x6CD5;&#xFF01;
+@Autowired
+private UserMapper userMapper;
+@Test
+void contextLoads() {
+// &#x53C2;&#x6570;&#x662F;&#x4E00;&#x4E2A; Wrapper &#xFF0C;&#x6761;&#x4EF6;&#x6784;&#x9020;&#x5668;&#xFF0C;&#x8FD9;&#x91CC;&#x6211;&#x4EEC;&#x5148;&#x4E0D;&#x7528; null
+// &#x67E5;&#x8BE2;&#x5168;&#x90E8;&#x7528;&#x6237;
+List&lt;User&gt; users = userMapper.selectList(null);
+users.forEach(System.out::println);
+}
+}
+</code></pre><h4 id="&#x914D;&#x7F6E;&#x65E5;&#x5FD7;">&#x914D;&#x7F6E;&#x65E5;&#x5FD7;</h4>
+<pre><code>mybatis-plus.configuration.log-impl=org.apache.ibatis.logging.stdout.StdOutImpl  //&#x63A7;&#x5236;&#x53F0;&#x57FA;&#x672C;&#x7684;&#x65E5;&#x5FD7;
+</code></pre><h2 id="crud">CRUD</h2>
+<h4 id="service-crud&#x63A5;&#x53E3;&#x548C;mapper-crud-&#x63A5;&#x53E3;">service CRUD&#x63A5;&#x53E3;&#x548C;Mapper CRUD &#x63A5;&#x53E3;</h4>
+<p><a href="https://mp.baomidou.com/guide/crud-interface.html#mapper-&#x5C42;-&#x9009;&#x88C5;&#x4EF6;" target="_blank">https://mp.baomidou.com/guide/crud-interface.html#mapper-%E5%B1%82-%E9%80%89%E8%A3%85%E4%BB%B6</a></p>
+<h6 id="service-crud-&#x63A5;&#x53E3;">Service CRUD &#x63A5;&#x53E3;</h6>
+<ul>
+<li>&#x901A;&#x7528; Service CRUD &#x5C01;&#x88C5;<a href="https://gitee.com/baomidou/mybatis-plus/blob/3.0/mybatis-plus-extension/src/main/java/com/baomidou/mybatisplus/extension/service/IService.java" target="_blank">IService</a>&#x63A5;&#x53E3;&#xFF0C;&#x8FDB;&#x4E00;&#x6B65;&#x5C01;&#x88C5; CRUD &#x91C7;&#x7528; <code>get &#x67E5;&#x8BE2;&#x5355;&#x884C;</code> <code>remove &#x5220;&#x9664;</code> <code>list &#x67E5;&#x8BE2;&#x96C6;&#x5408;</code> <code>page &#x5206;&#x9875;</code> &#x524D;&#x7F00;&#x547D;&#x540D;&#x65B9;&#x5F0F;&#x533A;&#x5206; <code>Mapper</code> &#x5C42;&#x907F;&#x514D;&#x6DF7;&#x6DC6;&#xFF0C;</li>
+<li>&#x6CDB;&#x578B; <code>T</code> &#x4E3A;&#x4EFB;&#x610F;&#x5B9E;&#x4F53;&#x5BF9;&#x8C61;</li>
+<li>&#x5EFA;&#x8BAE;&#x5982;&#x679C;&#x5B58;&#x5728;&#x81EA;&#x5B9A;&#x4E49;&#x901A;&#x7528; Service &#x65B9;&#x6CD5;&#x7684;&#x53EF;&#x80FD;&#xFF0C;&#x8BF7;&#x521B;&#x5EFA;&#x81EA;&#x5DF1;&#x7684; <code>IBaseService</code> &#x7EE7;&#x627F; <code>Mybatis-Plus</code> &#x63D0;&#x4F9B;&#x7684;&#x57FA;&#x7C7B;</li>
+<li>&#x5BF9;&#x8C61; <code>Wrapper</code> &#x4E3A; <a href="https://github.com/baomidou/mybatis-plus-doc/blob/master/guide/wrapper.html" target="_blank">&#x6761;&#x4EF6;&#x6784;&#x9020;&#x5668;</a> </li>
+</ul>
+<blockquote>
+<p>Save&#x3001;Update&#x3001;Get&#x3001;List&#x3001;Page&#x3001;Count&#x3001;Chain</p>
+</blockquote>
+<h6 id="mapper-crud-&#x63A5;&#x53E3;">Mapper CRUD &#x63A5;&#x53E3;</h6>
+<ul>
+<li>&#x901A;&#x7528; CRUD &#x5C01;&#x88C5;<a href="https://gitee.com/baomidou/mybatis-plus/blob/3.0/mybatis-plus-core/src/main/java/com/baomidou/mybatisplus/core/mapper/BaseMapper.java" target="_blank">BaseMapper</a>&#x63A5;&#x53E3;&#xFF0C;&#x4E3A; <code>Mybatis-Plus</code> &#x542F;&#x52A8;&#x65F6;&#x81EA;&#x52A8;&#x89E3;&#x6790;&#x5B9E;&#x4F53;&#x8868;&#x5173;&#x7CFB;&#x6620;&#x5C04;&#x8F6C;&#x6362;&#x4E3A; <code>Mybatis</code> &#x5185;&#x90E8;&#x5BF9;&#x8C61;&#x6CE8;&#x5165;&#x5BB9;&#x5668;</li>
+<li>&#x6CDB;&#x578B; <code>T</code> &#x4E3A;&#x4EFB;&#x610F;&#x5B9E;&#x4F53;&#x5BF9;&#x8C61;</li>
+<li>&#x53C2;&#x6570; <code>Serializable</code> &#x4E3A;&#x4EFB;&#x610F;&#x7C7B;&#x578B;&#x4E3B;&#x952E; <code>Mybatis-Plus</code> &#x4E0D;&#x63A8;&#x8350;&#x4F7F;&#x7528;&#x590D;&#x5408;&#x4E3B;&#x952E;&#x7EA6;&#x5B9A;&#x6BCF;&#x4E00;&#x5F20;&#x8868;&#x90FD;&#x6709;&#x81EA;&#x5DF1;&#x7684;&#x552F;&#x4E00; <code>id</code> &#x4E3B;&#x952E;</li>
+<li>&#x5BF9;&#x8C61; <code>Wrapper</code> &#x4E3A; <a href="https://github.com/baomidou/mybatis-plus-doc/blob/master/guide/wrapper.html" target="_blank">&#x6761;&#x4EF6;&#x6784;&#x9020;&#x5668;</a></li>
+</ul>
+<blockquote>
+<p>Insert&#x3001;Delete&#x3001;Update&#x3001;Select</p>
+<p>Insert</p>
+</blockquote>
+<pre><code>@Test
+public void testInsert(){
+    User user = new User();
+    user.setName(&quot;eternal&quot;);
+    user.setAge(21);
+    user.setEmail(&quot;254908537@qq.com&quot;);
+
+    int result = userMapper.insert(user);
+
+    System.out.println(result);
+    System.out.println(user);
+}
+</code></pre><p><img src="F:\Typora&#x6570;&#x636E;&#x50A8;&#x5B58;\&#x6570;&#x636E;&#x5E93;\mybatisPlus.assets\image-20200731132404211.png" alt="image-20200731132404211"></p>
+<h4 id="&#x4E3B;&#x952E;&#x751F;&#x6210;&#x7B56;&#x7565;">&#x4E3B;&#x952E;&#x751F;&#x6210;&#x7B56;&#x7565;</h4>
+<p><strong>1. &#x6570;&#x636E;&#x5E93;&#x81EA;&#x589E;&#x957F;&#x5E8F;&#x5217;&#x6216;&#x5B57;&#x6BB5;</strong></p>
+<p>&#x6700;&#x5E38;&#x89C1;&#x7684;&#x65B9;&#x5F0F;&#x3002;&#x5229;&#x7528;&#x6570;&#x636E;&#x5E93;&#xFF0C;&#x5168;&#x6570;&#x636E;&#x5E93;&#x552F;&#x4E00;&#x3002;</p>
+<p>&#x4F18;&#x70B9;&#xFF1A;</p>
+<p>1&#xFF09;&#x7B80;&#x5355;&#xFF0C;&#x4EE3;&#x7801;&#x65B9;&#x4FBF;&#xFF0C;&#x6027;&#x80FD;&#x53EF;&#x4EE5;&#x63A5;&#x53D7;&#x3002;</p>
+<p>2&#xFF09;&#x6570;&#x5B57;ID&#x5929;&#x7136;&#x6392;&#x5E8F;&#xFF0C;&#x5BF9;&#x5206;&#x9875;&#x6216;&#x8005;&#x9700;&#x8981;&#x6392;&#x5E8F;&#x7684;&#x7ED3;&#x679C;&#x5F88;&#x6709;&#x5E2E;&#x52A9;&#x3002;</p>
+<p>&#x7F3A;&#x70B9;&#xFF1A;</p>
+<p>1&#xFF09;&#x4E0D;&#x540C;&#x6570;&#x636E;&#x5E93;&#x8BED;&#x6CD5;&#x548C;&#x5B9E;&#x73B0;&#x4E0D;&#x540C;&#xFF0C;&#x6570;&#x636E;&#x5E93;&#x8FC1;&#x79FB;&#x7684;&#x65F6;&#x5019;&#x6216;&#x591A;&#x6570;&#x636E;&#x5E93;&#x7248;&#x672C;&#x652F;&#x6301;&#x7684;&#x65F6;&#x5019;&#x9700;&#x8981;&#x5904;&#x7406;&#x3002;</p>
+<p>2&#xFF09;&#x5728;&#x5355;&#x4E2A;&#x6570;&#x636E;&#x5E93;&#x6216;&#x8BFB;&#x5199;&#x5206;&#x79BB;&#x6216;&#x4E00;&#x4E3B;&#x591A;&#x4ECE;&#x7684;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x53EA;&#x6709;&#x4E00;&#x4E2A;&#x4E3B;&#x5E93;&#x53EF;&#x4EE5;&#x751F;&#x6210;&#x3002;&#x6709;&#x5355;&#x70B9;&#x6545;&#x969C;&#x7684;&#x98CE;&#x9669;&#x3002;</p>
+<p>3&#xFF09;&#x5728;&#x6027;&#x80FD;&#x8FBE;&#x4E0D;&#x5230;&#x8981;&#x6C42;&#x7684;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x6BD4;&#x8F83;&#x96BE;&#x4E8E;&#x6269;&#x5C55;&#x3002;</p>
+<p>4&#xFF09;&#x5982;&#x679C;&#x9047;&#x89C1;&#x591A;&#x4E2A;&#x7CFB;&#x7EDF;&#x9700;&#x8981;&#x5408;&#x5E76;&#x6216;&#x8005;&#x6D89;&#x53CA;&#x5230;&#x6570;&#x636E;&#x8FC1;&#x79FB;&#x4F1A;&#x76F8;&#x5F53;&#x75DB;&#x82E6;&#x3002;</p>
+<p>5&#xFF09;&#x5206;&#x8868;&#x5206;&#x5E93;&#x7684;&#x65F6;&#x5019;&#x4F1A;&#x6709;&#x9EBB;&#x70E6;&#x3002;</p>
+<p>&#x4F18;&#x5316;&#x65B9;&#x6848;&#xFF1A;</p>
+<p>1&#xFF09;&#x9488;&#x5BF9;&#x4E3B;&#x5E93;&#x5355;&#x70B9;&#xFF0C;&#x5982;&#x679C;&#x6709;&#x591A;&#x4E2A;Master&#x5E93;&#xFF0C;&#x5219;&#x6BCF;&#x4E2A;Master&#x5E93;&#x8BBE;&#x7F6E;&#x7684;&#x8D77;&#x59CB;&#x6570;&#x5B57;&#x4E0D;&#x4E00;&#x6837;&#xFF0C;&#x6B65;&#x957F;&#x4E00;&#x6837;&#xFF0C;&#x53EF;&#x4EE5;&#x662F;Master&#x7684;&#x4E2A;&#x6570;&#x3002;&#x6BD4;&#x5982;&#xFF1A;Master1 &#x751F;&#x6210;&#x7684;&#x662F; 1&#xFF0C;4&#xFF0C;7&#xFF0C;10&#xFF0C;Master2&#x751F;&#x6210;&#x7684;&#x662F;2,5,8,11 Master3&#x751F;&#x6210;&#x7684;&#x662F; 3,6,9,12&#x3002;&#x8FD9;&#x6837;&#x5C31;&#x53EF;&#x4EE5;&#x6709;&#x6548;&#x751F;&#x6210;&#x96C6;&#x7FA4;&#x4E2D;&#x7684;&#x552F;&#x4E00;ID&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x5927;&#x5927;&#x964D;&#x4F4E;ID&#x751F;&#x6210;&#x6570;&#x636E;&#x5E93;&#x64CD;&#x4F5C;&#x7684;&#x8D1F;&#x8F7D;&#x3002;</p>
+<p><strong>2. UUID</strong></p>
+<p>&#x5E38;&#x89C1;&#x7684;&#x65B9;&#x5F0F;&#x3002;&#x53EF;&#x4EE5;&#x5229;&#x7528;&#x6570;&#x636E;&#x5E93;&#x4E5F;&#x53EF;&#x4EE5;&#x5229;&#x7528;&#x7A0B;&#x5E8F;&#x751F;&#x6210;&#xFF0C;&#x4E00;&#x822C;&#x6765;&#x8BF4;&#x5168;&#x7403;&#x552F;&#x4E00;&#x3002;</p>
+<p>&#x4F18;&#x70B9;&#xFF1A;</p>
+<p>1&#xFF09;&#x7B80;&#x5355;&#xFF0C;&#x4EE3;&#x7801;&#x65B9;&#x4FBF;&#x3002;</p>
+<p>2&#xFF09;&#x751F;&#x6210;ID&#x6027;&#x80FD;&#x975E;&#x5E38;&#x597D;&#xFF0C;&#x57FA;&#x672C;&#x4E0D;&#x4F1A;&#x6709;&#x6027;&#x80FD;&#x95EE;&#x9898;&#x3002;</p>
+<p>3&#xFF09;&#x5168;&#x7403;&#x552F;&#x4E00;&#xFF0C;&#x5728;&#x9047;&#x89C1;&#x6570;&#x636E;&#x8FC1;&#x79FB;&#xFF0C;&#x7CFB;&#x7EDF;&#x6570;&#x636E;&#x5408;&#x5E76;&#xFF0C;&#x6216;&#x8005;&#x6570;&#x636E;&#x5E93;&#x53D8;&#x66F4;&#x7B49;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x53EF;&#x4EE5;&#x4ECE;&#x5BB9;&#x5E94;&#x5BF9;&#x3002;</p>
+<p>&#x7F3A;&#x70B9;&#xFF1A;</p>
+<p>1&#xFF09;&#x6CA1;&#x6709;&#x6392;&#x5E8F;&#xFF0C;&#x65E0;&#x6CD5;&#x4FDD;&#x8BC1;&#x8D8B;&#x52BF;&#x9012;&#x589E;&#x3002;</p>
+<p>2&#xFF09;UUID&#x5F80;&#x5F80;&#x662F;&#x4F7F;&#x7528;&#x5B57;&#x7B26;&#x4E32;&#x5B58;&#x50A8;&#xFF0C;&#x67E5;&#x8BE2;&#x7684;&#x6548;&#x7387;&#x6BD4;&#x8F83;&#x4F4E;&#x3002;</p>
+<p>3&#xFF09;&#x5B58;&#x50A8;&#x7A7A;&#x95F4;&#x6BD4;&#x8F83;&#x5927;&#xFF0C;&#x5982;&#x679C;&#x662F;&#x6D77;&#x91CF;&#x6570;&#x636E;&#x5E93;&#xFF0C;&#x5C31;&#x9700;&#x8981;&#x8003;&#x8651;&#x5B58;&#x50A8;&#x91CF;&#x7684;&#x95EE;&#x9898;&#x3002;</p>
+<p>4&#xFF09;&#x4F20;&#x8F93;&#x6570;&#x636E;&#x91CF;&#x5927;</p>
+<p>5&#xFF09;&#x4E0D;&#x53EF;&#x8BFB;&#x3002;</p>
+<p> UUID</p>
+<p><a href="https://en.wikipedia.org/wiki/Universally_unique_identifier" target="_blank">UUID(Universally Unique IDentifier)</a>&#x662F;&#x4E00;&#x4E2A;128&#x4F4D;&#x6570;&#x5B57;&#x7684;&#x552F;&#x4E00;&#x6807;&#x8BC6;&#x3002;<a href="https://tools.ietf.org/html/rfc4122" target="_blank">RFC 4122</a>&#x63CF;&#x8FF0;&#x4E86;&#x5177;&#x4F53;&#x7684;&#x89C4;&#x8303;&#x5B9E;&#x73B0;&#x3002;&#x672C;&#x6587;&#x5C1D;&#x8BD5;&#x4ECE;&#x5B83;&#x7684;&#x7ED3;&#x6784;&#x4E00;&#x6B65;&#x6B65;&#x5206;&#x6790;&#x4E3A;&#x4EC0;&#x4E48;&#x5B83;&#x80FD;&#x505A;&#x5230;&#x552F;&#x4E00;&#x6027;&#xFF1F;&#x53CA;&#x5404;&#x4E2A;&#x7248;&#x672C;&#x7684;&#x4F7F;&#x7528;&#x573A;&#x666F;&#x3002;</p>
+<p><strong>Format</strong></p>
+<p>UUID&#x4F7F;&#x7528;16&#x8FDB;&#x5236;&#x8868;&#x793A;&#xFF0C;&#x5171;&#x6709;36&#x4E2A;&#x5B57;&#x7B26;(32&#x4E2A;&#x5B57;&#x6BCD;&#x6570;&#x5B57;+4&#x4E2A;&#x8FDE;&#x63A5;&#x7B26;&#x201D;-&#x201C;)&#xFF0C;&#x683C;&#x5F0F;&#x4E3A;<code>8-4-4-4-12</code>&#xFF0C;&#x5982;&#xFF1A;</p>
+<pre><code>6d25a684-9558-11e9-aa94-efccd7a0659b
+xxxxxxxx-xxxx-Mxxx-Nxxx-xxxxxxxxxxxx
+</code></pre><p>M&#x4E2D;&#x4F7F;&#x7528;4&#x4F4D;&#x6765;&#x8868;&#x793A;UUID&#x7684;&#x7248;&#x672C;&#xFF0C;N&#x4E2D;&#x4F7F;&#x7528;1-3&#x4F4D;&#x8868;&#x793A;&#x4E0D;&#x540C;&#x7684;variant&#x3002;&#x5982;&#x4E0A;&#x9762;&#x6240;&#x793A;&#xFF1A;M =1, N = a&#x8868;&#x793A;&#x6B64;UUID&#x4E3A;version-1&#xFF0C;variant-1&#x7684;UUID(Time-based ECE/RFC 4122 UUID)&#x3002;</p>
+<p>&#x4F46;&#x662F;&#x4E3A;&#x4EC0;&#x4E48;&#x6700;&#x5F00;&#x59CB;&#x8BF4;&#x5B83;&#x662F;&#x4E00;&#x4E2A;128&#x4F4D;&#x7684;&#x552F;&#x4E00;&#x6807;&#x8BC6;&#x5462;&#xFF1F;&#x8FD9;&#x91CC;&#x660E;&#x660E;&#x5B57;&#x6BCD;&#x4F4D;&#x6570;&#x662F;(8+4+4+4+12)*8=256&#x4F4D;&#x3002;</p>
+<p>&#x56E0;&#x4E3A;&#x4E0A;&#x9762;&#x7684;&#x5B57;&#x6BCD;&#x662F;&#x7528;&#x7684;16&#x8FDB;&#x5236;&#xFF0C;&#x4E00;&#x4E2A;16&#x8FDB;&#x5236;&#x53EA;&#x4EE3;&#x8868;4&#x4E2A;bit&#xFF0C;&#x6240;&#x4EE5;&#x5E94;&#x8BE5;&#x662F;(8+4+4+4+12)*4=128&#x4F4D;&#x3002;</p>
+<p>UUID&#x4F7F;&#x7528;&#x7684;&#x662F;&#x5927;&#x6570;&#x4F4D;format(<a href="https://en.wikipedia.org/wiki/Endianness#Big" target="_blank">big-endian</a>)&#xFF0C;&#x6BD4;&#x5982;&#xFF1A;</p>
+<p><code>00112233-4455-6677-8899-aabbccddeeff</code> &#x7F16;&#x7801;&#x5C31;&#x662F; <code>00 11 22 33</code> <code>44 55</code> <code>66 77</code> <code>88 99</code> <code>aa bb cc dd ee ff</code>.</p>
+<p>UUID&#x73B0;&#x6709;5&#x79CD;&#x7248;&#x672C;&#xFF0C;&#x662F;&#x6839;&#x636E;&#x4E0D;&#x540C;&#x7684;&#x4F7F;&#x7528;&#x573A;&#x666F;&#x5212;&#x5206;&#x7684;&#xFF0C;&#x800C;&#x4E0D;&#x662F;&#x6839;&#x636E;&#x7CBE;&#x5EA6;&#xFF0C;&#x6240;&#x4EE5;Version5&#x5E76;&#x4E0D;&#x4F1A;&#x6BD4;Version1&#x7CBE;&#x5EA6;&#x9AD8;&#xFF0C;&#x5728;&#x7CBE;&#x5EA6;&#x4E0A;&#xFF0C;<strong>&#x5927;&#x5BB6;&#x90FD;&#x80FD;&#x4FDD;&#x8BC1;&#x552F;&#x4E00;&#x6027;&#xFF0C;&#x91CD;&#x590D;&#x7684;&#x6982;&#x7387;&#x8FD1;&#x4E4E;&#x4E8E;0</strong>&#x3002;</p>
+<p><strong>V1(date-time MAC address)</strong></p>
+<p>&#x57FA;&#x4E8E;&#x65F6;&#x95F4;&#x6233;&#x53CA;MAC&#x5730;&#x5740;&#x7684;UUID&#x5B9E;&#x73B0;&#x3002;&#x5B83;&#x5305;&#x62EC;&#x4E86;48&#x4F4D;&#x7684;MAC&#x5730;&#x5740;&#x548C;60&#x4F4D;&#x7684;&#x65F6;&#x95F4;&#x6233;&#xFF0C;</p>
+<p>&#x63A5;&#x4E0B;&#x6765;&#x4F7F;&#x7528;<a href="https://web.archive.org/web/20190314034428/http://www.ossp.org/pkg/lib/uuid/" target="_blank">ossp-uuid</a>&#x547D;&#x4EE4;&#x884C;&#x521B;&#x5EFA;5&#x4E2A;UUID v1&#x3002;(&#x5728;Mac&#x5B89;&#x88C5;<code>brew install ossp-uuid</code>)</p>
+<pre><code>uuid -n 5 -v1
+5b01c826-9561-11e9-9659-cb41250df352
+5b01cc7c-9561-11e9-965a-57ad522dee7f
+5b01cea2-9561-11e9-965b-a3d050dd0f99
+5b01cf60-9561-11e9-965c-1b66505f58da
+5b01d118-9561-11e9-965d-97354eb9e996
+</code></pre><p>&#x8089;&#x773C;&#x4E00;&#x770B;&#xFF0C;&#x6709;&#x4E00;&#x79CD;&#x6240;&#x6709;&#x7684;UUID&#x90FD;&#x5F88;&#x76F8;&#x4F3C;&#x7684;&#x611F;&#x89C9;&#xFF0C;&#x51E0;&#x4E4E;&#x5C31;&#x8981;&#x91CD;&#x590D;&#x4E86;&#xFF01;&#x600E;&#x4E48;&#x56DE;&#x4E8B;&#xFF1F;</p>
+<p>&#x5176;&#x5B9E;v1&#x4E3A;&#x4E86;&#x4FDD;&#x8BC1;&#x552F;&#x4E00;&#x6027;&#xFF0C;&#x5F53;&#x65F6;&#x95F4;&#x7CBE;&#x5EA6;&#x4E0D;&#x591F;&#x65F6;&#xFF0C;&#x4F1A;&#x4F7F;&#x7528;13~14&#x4F4D;&#x7684;clock sequence&#x6765;&#x6269;&#x5C55;&#x65F6;&#x95F4;&#x6233;&#xFF0C;&#x6BD4;&#x5982;&#xFF1A;</p>
+<p>&#x5F53;UUID&#x7684;&#x751F;&#x4EA7;&#x6210;&#x901F;&#x7387;&#x592A;&#x5FEB;&#xFF0C;&#x8D85;&#x8FC7;&#x4E86;&#x7CFB;&#x7EDF;&#x65F6;&#x95F4;&#x7684;&#x7CBE;&#x5EA6;&#x3002;&#x65F6;&#x95F4;&#x6233;&#x7684;&#x4F4E;&#x4F4D;&#x90E8;&#x5206;&#x4F1A;&#x6BCF;&#x589E;&#x52A0;&#x4E00;&#x4E2A;UUID&#x5C31;+1&#x7684;&#x64CD;&#x4F5C;&#x6765;&#x6A21;&#x62DF;&#x66F4;&#x9AD8;&#x7CBE;&#x5EA6;&#x7684;&#x65F6;&#x95F4;&#x6233;&#xFF0C;&#x6362;&#x53E5;&#x8BDD;&#x8BF4;&#xFF0C;&#x5C31;&#x662F;&#x5F53;&#x7CFB;&#x7EDF;&#x65F6;&#x95F4;&#x7CBE;&#x5EA6;&#x65E0;&#x6CD5;&#x533A;&#x5206;2&#x4E2A;UUID&#x7684;&#x65F6;&#x95F4;&#x5148;&#x540E;&#x987A;&#x5E8F;&#x65F6;&#xFF0C;&#x4E3A;&#x4E86;&#x4FDD;&#x8BC1;&#x552F;&#x4E00;&#x6027;&#xFF0C;&#x4F1A;&#x5728;&#x5176;&#x4E2D;&#x4E00;&#x4E2A;UUID&#x4E0A;+1&#x3002;&#x6240;&#x4EE5;UUID&#x91CD;&#x590D;&#x7684;&#x6982;&#x7387;&#x51E0;&#x4E4E;&#x4E3A;0&#xFF0C;&#x65F6;&#x95F4;&#x6233;&#x52A0;&#x6269;&#x5C55;&#x7684;clock sequence&#x4E00;&#x5171;&#x6709;74bits,(2&#x7684;74&#x6B21;&#x65B9;&#xFF0C;&#x7EA6;&#x4E3A;1.8&#x540E;&#x9762;&#x52A0;22&#x4E2A;&#x96F6;),&#x5373;&#x5728;&#x6BCF;&#x4E2A;&#x8282;&#x70B9;&#x4E0B;&#xFF0C;&#x6BCF;&#x79D2;&#x53EF;&#x4EA7;&#x751F;1630&#x4EBF;&#x4E0D;&#x91CD;&#x590D;&#x7684;UUID(&#x56E0;&#x4E3A;&#x53EA;&#x7CBE;&#x786E;&#x5230;&#x4E86;&#x79D2;,&#x4E0D;&#x518D;&#x662F;74&#x4F4D;&#xFF0C;&#x6240;&#x4EE5;&#x6362;&#x7B97;&#x4E86;&#x4E00;&#x4E0B;)&#x3002;</p>
+<p>&#x76F8;&#x5BF9;&#x4E8E;&#x5176;&#x5B83;&#x7248;&#x672C;&#xFF0C;v1&#x8FD8;&#x52A0;&#x5165;48&#x4F4D;&#x7684;MAC&#x5730;&#x5740;&#xFF0C;&#x8FD9;&#x4F9D;&#x8D56;&#x4E8E;&#x7F51;&#x5361;&#x4F9B;&#x5E94;&#x5546;&#x80FD;&#x63D0;&#x4F9B;&#x552F;&#x4E00;&#x7684;MAC&#x5730;&#x5740;&#xFF0C;&#x540C;&#x65F6;&#x4E5F;&#x53EF;&#x80FD;&#x901A;&#x8FC7;&#x5B83;&#x53CD;&#x67E5;&#x5230;&#x5BF9;&#x5E94;&#x7684;MAC&#x5730;&#x5740;&#x3002;<a href="https://en.wikipedia.org/wiki/Melissa_(computer_virus" target="_blank">Melissa</a>)&#x75C5;&#x6BD2;&#x5C31;&#x662F;&#x8FD9;&#x6837;&#x505A;&#x5230;&#x7684;&#x3002;</p>
+<p><strong>V2(date-time Mac address)</strong></p>
+<p>&#x8FD9;&#x662F;&#x6700;&#x795E;&#x79D8;&#x7684;&#x7248;&#x672C;&#xFF0C;RFC&#x6CA1;&#x6709;&#x63D0;&#x4F9B;&#x5177;&#x4F53;&#x7684;&#x5B9E;&#x73B0;&#x7EC6;&#x8282;&#xFF0C;&#x4EE5;&#x81F3;&#x4E8E;&#x5927;&#x90E8;&#x5206;&#x7684;UUID&#x5E93;&#x90FD;&#x6CA1;&#x6709;&#x5B9E;&#x73B0;&#x5B83;&#xFF0C;&#x53EA;&#x5728;&#x7279;&#x5B9A;&#x7684;&#x573A;&#x666F;(DCE security)&#x624D;&#x4F1A;&#x7528;&#x5230;&#x3002;&#x6240;&#x4EE5;&#x7EDD;&#x5927;&#x6570;&#x60C5;&#x51B5;&#xFF0C;&#x6211;&#x4EEC;&#x4E5F;&#x4E0D;&#x4F1A;&#x78B0;&#x5230;&#x5B83;&#x3002;</p>
+<p><strong>V3,5(namespace name-based)</strong></p>
+<p>V3&#x548C;V5&#x90FD;&#x662F;&#x901A;&#x8FC7;hash namespace&#x7684;&#x6807;&#x8BC6;&#x7B26;&#x548C;&#x540D;&#x79F0;&#x751F;&#x6210;&#x7684;&#x3002;V3&#x4F7F;&#x7528;<a href="https://en.wikipedia.org/wiki/MD5" target="_blank">MD5</a>&#x4F5C;&#x4E3A;hash&#x51FD;&#x6570;&#xFF0C;V5&#x5219;&#x4F7F;&#x7528;<a href="https://en.wikipedia.org/wiki/SHA-1" target="_blank">SHA-1</a>&#x3002;</p>
+<p>&#x56E0;&#x4E3A;&#x91CC;&#x9762;&#x6CA1;&#x6709;&#x4E0D;&#x786E;&#x5B9A;&#x7684;&#x90E8;&#x5206;&#xFF0C;&#x6240;&#x4EE5;&#x5F53;namespace&#x4E0E;&#x8F93;&#x5165;&#x53C2;&#x6570;&#x786E;&#x5B9A;&#x65F6;&#xFF0C;&#x5F97;&#x5230;&#x7684;UUID&#x90FD;&#x662F;&#x786E;&#x5B9A;&#x552F;&#x4E00;&#x7684;&#x3002;&#x6BD4;&#x5982;&#xFF1A;</p>
+<pre><code>uuid -n 3 -v3 ns:URL http://www.baidu.com
+2f67490d-55a4-395e-b540-457195f7aa95
+2f67490d-55a4-395e-b540-457195f7aa95
+2f67490d-55a4-395e-b540-457195f7aa95
+</code></pre><p>&#x53EF;&#x4EE5;&#x770B;&#x5230;&#x8FD9;3&#x4E2A;UUID&#x90FD;&#x662F;&#x4E00;&#x6837;&#x7684;&#x3002;</p>
+<p>&#x5177;&#x4F53;&#x7684;&#x6D41;&#x7A0B;&#x5C31;&#x662F;</p>
+<ol>
+<li>&#x628A;namespace&#x548C;&#x8F93;&#x5165;&#x53C2;&#x6570;&#x62FC;&#x63A5;&#x5728;&#x4E00;&#x8D77;&#xFF0C;&#x5982;&#x201D;http/wwwbaidu.com&#x201D; ++ &#x201C;/query=uuid&#x201D;&#xFF1B;</li>
+<li>&#x4F7F;&#x7528;MD5&#x7B97;&#x6CD5;&#x5BF9;&#x62FC;&#x63A5;&#x540E;&#x7684;&#x5B57;&#x4E32;&#x8FDB;&#x884C;hash&#xFF0C;&#x622A;&#x65AD;&#x4E3A;128&#x4F4D;&#xFF1B;</li>
+<li>&#x628A;UUID&#x7684;Version&#x548C;variant&#x5B57;&#x6BB5;&#x90FD;&#x66FF;&#x6362;&#x6210;&#x56FA;&#x5B9A;&#x7684;;</li>
+<li>&#x5982;&#x679C;&#x9700;&#x8981;to_string&#xFF0C;&#x9700;&#x8981;&#x8F6C;&#x4E3A;16&#x8FDB;&#x5236;&#x548C;&#x52A0;&#x4E0A;&#x8FDE;&#x63A5;&#x7B26;&#x201D;-&#x201C;&#x3002;</li>
+</ol>
+<p>&#x628A;V3&#x7684;hash&#x7B97;&#x6CD5;&#x7531;MD5&#x6362;&#x6210;SHA-1&#x5C31;&#x6210;&#x4E86;V5&#x3002;</p>
+<p><strong>V4(random)</strong></p>
+<p>&#x8FD9;&#x4E2A;&#x7248;&#x672C;&#x4F7F;&#x7528;&#x6700;&#x4E3A;&#x5E7F;&#x6CDB;:</p>
+<pre><code>uuid -n 5 -v4
+a3535b78-69dd-4a9e-9a79-57e2ea28981b
+a9ba3122-d89b-4855-85f1-92a018e5c457
+7c59d031-a143-4676-a8ce-1b24200ab463
+533831da-eab4-4c7d-a3f6-1e2da5a4c9a0
+def539e8-d298-4575-b769-b55d7637b51e
+</code></pre><p>&#x5176;&#x4E2D;4&#x4F4D;&#x4EE3;&#x8868;&#x7248;&#x672C;&#xFF0C;2-3&#x4F4D;&#x4EE3;&#x8868;variant&#x3002;&#x4F59;&#x4E0B;&#x7684;122-121&#x4F4D;&#x90FD;&#x662F;&#x5168;&#x90E8;&#x968F;&#x673A;&#x7684;&#x3002;&#x5373;&#x6709;2&#x7684;122&#x6B21;&#x65B9;(5.3&#x540E;&#x9762;36&#x4E2A;0)&#x4E2A;UUID&#x3002;&#x4E00;&#x4E2A;&#x6807;&#x51C6;&#x5B9E;&#x73B0;&#x7684;UUID&#x5E93;&#x5728;&#x751F;&#x6210;&#x4E86;2.71&#x4E07;&#x4EBF;&#x4E2A;UUID&#x4F1A;&#x4EA7;&#x751F;&#x91CD;&#x590D;UUID&#x7684;&#x53EF;&#x80FD;&#x6027;&#x4E5F;&#x53EA;&#x6709;50%&#x7684;&#x6982;&#x7387;</p>
+<p><img src="https://user-images.githubusercontent.com/3116225/59972542-82f89000-95c3-11e9-8f58-0ed541d5e409.jpg" alt="uuid"></p>
+<p>&#x8FD9;&#x76F8;&#x5F53;&#x4E8E;&#x6BCF;&#x79D2;&#x4EA7;&#x751F;10&#x4EBF;&#x7684;UUID&#xFF0C;&#x6301;&#x7EED;85&#x5E74;&#xFF0C;&#x800C;&#x628A;&#x8FD9;&#x4E9B;UUID&#x90FD;&#x5B58;&#x5165;&#x6587;&#x4EF6;&#xFF0C;&#x6BCF;&#x4E2A;UUID&#x5360;16bytes,&#x603B;&#x9700;&#x8981;45 EB(exabytes)&#xFF0C;&#x6BD4;&#x76EE;&#x524D;&#x6700;&#x5927;&#x7684;&#x6570;&#x636E;&#x5E93;(PB)&#x8FD8;&#x8981;&#x5927;&#x5F88;&#x591A;&#x500D;&#x3002;</p>
+<p><strong>Summary</strong></p>
+<ol>
+<li><p>&#x5982;&#x679C;&#x53EA;&#x662F;&#x9700;&#x8981;&#x751F;&#x6210;&#x4E00;&#x4E2A;&#x552F;&#x4E00;ID,&#x4F60;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;V1&#x6216;V4&#x3002;</p>
+<pre><code>V1&#x57FA;&#x4E8E;&#x65F6;&#x95F4;&#x6233;&#x548C;Mac&#x5730;&#x5740;,&#x8FD9;&#x4E9B;ID&#x6709;&#x4E00;&#x5B9A;&#x7684;&#x89C4;&#x5F8B;(&#x4F60;&#x7ED9;&#x51FA;&#x4E00;&#x4E2A;&#xFF0C;&#x662F;&#x6709;&#x53EF;&#x80FD;&#x88AB;&#x731C;&#x51FA;&#x6765;&#x4E0B;&#x4E00;&#x4E2A;&#x662F;&#x591A;&#x5C11;&#x7684;)&#xFF0C;&#x800C;&#x4E14;&#x4F1A;&#x66B4;&#x9732;&#x4F60;&#x7684;Mac&#x5730;&#x5740;&#x3002;
+V4&#x662F;&#x5B8C;&#x5168;&#x968F;&#x673A;(&#x4F2A;)&#x7684;&#x3002;
+</code></pre></li>
+<li><p>&#x5982;&#x679C;&#x5BF9;&#x4E8E;&#x76F8;&#x540C;&#x7684;&#x53C2;&#x6570;&#x9700;&#x8981;&#x8F93;&#x51FA;&#x76F8;&#x540C;&#x7684;UUID,&#x4F60;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;V3&#x6216;V5&#x3002;</p>
+<pre><code>V3&#x57FA;&#x4E8E;MD5 hash&#x7B97;&#x6CD5;&#xFF0C;&#x5982;&#x679C;&#x9700;&#x8981;&#x8003;&#x8651;&#x4E0E;&#x5176;&#x5B83;&#x7CFB;&#x7EDF;&#x7684;&#x517C;&#x5BB9;&#x6027;&#x7684;&#x8BDD;&#xFF0C;&#x5C31;&#x7528;&#x5B83;,&#x56E0;&#x4E3A;&#x5B83;&#x51FA;&#x6765;&#x5F97;&#x65E9;&#xFF0C;&#x5927;&#x6982;&#x7387;&#x5927;&#x5BB6;&#x90FD;&#x662F;&#x7528;&#x5B83;&#x7684;&#x3002;
+V5&#x57FA;&#x4E8E;SHA-1 hash&#x7B97;&#x6CD5;&#xFF0C;&#x8FD9;&#x4E2A;&#x662F;&#x9996;&#x9009;&#x3002;
+</code></pre></li>
+</ol>
+<p><strong>3. UUID&#x7684;&#x53D8;&#x79CD;</strong></p>
+<p>1&#xFF09;&#x4E3A;&#x4E86;&#x89E3;&#x51B3;UUID&#x4E0D;&#x53EF;&#x8BFB;&#xFF0C;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;UUID to Int64&#x7684;&#x65B9;&#x6CD5;&#x3002;&#x53CA;</p>
+<pre><code>/// &lt;summary&gt;
+/// &#x6839;&#x636E;GUID&#x83B7;&#x53D6;&#x552F;&#x4E00;&#x6570;&#x5B57;&#x5E8F;&#x5217;
+/// &lt;/summary&gt;
+public static long GuidToInt64()
+{
+    byte[] bytes = Guid.NewGuid().ToByteArray();
+    return BitConverter.ToInt64(bytes, 0);
+}
+</code></pre><p>2&#xFF09;&#x4E3A;&#x4E86;&#x89E3;&#x51B3;UUID&#x65E0;&#x5E8F;&#x7684;&#x95EE;&#x9898;&#xFF0C;NHibernate&#x5728;&#x5176;&#x4E3B;&#x952E;&#x751F;&#x6210;&#x65B9;&#x5F0F;&#x4E2D;&#x63D0;&#x4F9B;&#x4E86;Comb&#x7B97;&#x6CD5;&#xFF08;combined guid/timestamp&#xFF09;&#x3002;&#x4FDD;&#x7559;GUID&#x7684;10&#x4E2A;&#x5B57;&#x8282;&#xFF0C;&#x7528;&#x53E6;6&#x4E2A;&#x5B57;&#x8282;&#x8868;&#x793A;GUID&#x751F;&#x6210;&#x7684;&#x65F6;&#x95F4;&#xFF08;DateTime&#xFF09;&#x3002;</p>
+<pre><code>/// &lt;summary&gt; 
+/// Generate a new &lt;see cref=&quot;Guid&quot;/&gt; using the comb algorithm. 
+/// &lt;/summary&gt; 
+private Guid GenerateComb()
+{
+    byte[] guidArray = Guid.NewGuid().ToByteArray();
+
+    DateTime baseDate = new DateTime(1900, 1, 1);
+    DateTime now = DateTime.Now;
+
+    // Get the days and milliseconds which will be used to build    
+    //the byte string    
+    TimeSpan days = new TimeSpan(now.Ticks - baseDate.Ticks);
+    TimeSpan msecs = now.TimeOfDay;
+
+    // Convert to a byte array        
+    // Note that SQL Server is accurate to 1/300th of a    
+    // millisecond so we divide by 3.333333    
+    byte[] daysArray = BitConverter.GetBytes(days.Days);
+    byte[] msecsArray = BitConverter.GetBytes((long)
+      (msecs.TotalMilliseconds / 3.333333));
+
+    // Reverse the bytes to match SQL Servers ordering    
+    Array.Reverse(daysArray);
+    Array.Reverse(msecsArray);
+
+    // Copy the bytes into the guid    
+    Array.Copy(daysArray, daysArray.Length - 2, guidArray,
+      guidArray.Length - 6, 2);
+    Array.Copy(msecsArray, msecsArray.Length - 4, guidArray,
+      guidArray.Length - 4, 4);
+
+    return new Guid(guidArray);
+}
+</code></pre><p>&#x7528;&#x4E0A;&#x9762;&#x7684;&#x7B97;&#x6CD5;&#x6D4B;&#x8BD5;&#x4E00;&#x4E0B;&#xFF0C;&#x5F97;&#x5230;&#x5982;&#x4E0B;&#x7684;&#x7ED3;&#x679C;&#xFF1A;&#x4F5C;&#x4E3A;&#x6BD4;&#x8F83;&#xFF0C;&#x524D;&#x9762;3&#x4E2A;&#x662F;&#x4F7F;&#x7528;COMB&#x7B97;&#x6CD5;&#x5F97;&#x51FA;&#x7684;&#x7ED3;&#x679C;&#xFF0C;&#x6700;&#x540E;12&#x4E2A;&#x5B57;&#x7B26;&#x4E32;&#x662F;&#x65F6;&#x95F4;&#x5E8F;&#xFF08;&#x7EDF;&#x4E00;&#x6BEB;&#x79D2;&#x751F;&#x6210;&#x7684;3&#x4E2A;UUID&#xFF09;&#xFF0C;&#x8FC7;&#x6BB5;&#x65F6;&#x95F4;&#x5982;&#x679C;&#x518D;&#x6B21;&#x751F;&#x6210;&#xFF0C;&#x5219;12&#x4E2A;&#x5B57;&#x7B26;&#x4E32;&#x4F1A;&#x6BD4;&#x56FE;&#x793A;&#x7684;&#x8981;&#x5927;&#x3002;&#x540E;&#x9762;3&#x4E2A;&#x662F;&#x76F4;&#x63A5;&#x751F;&#x6210;&#x7684;GUID&#x3002;</p>
+<p><a href="http://images2015.cnblogs.com/blog/15700/201602/15700-20160227213048174-1443183768.png" target="_blank"><img src="https://images2015.cnblogs.com/blog/15700/201602/15700-20160227213048721-177386520.png" alt="ODX}_`4N5X$F93OAS~`8Z)C"></a></p>
+<p>&#x5982;&#x679C;&#x60F3;&#x628A;&#x65F6;&#x95F4;&#x5E8F;&#x653E;&#x5728;&#x524D;&#x9762;&#xFF0C;&#x53EF;&#x4EE5;&#x751F;&#x6210;&#x540E;&#x6539;&#x53D8;12&#x4E2A;&#x5B57;&#x7B26;&#x4E32;&#x7684;&#x4F4D;&#x7F6E;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x4FEE;&#x6539;&#x7B97;&#x6CD5;&#x7C7B;&#x7684;&#x6700;&#x540E;&#x4E24;&#x4E2A;Array.Copy&#x3002;</p>
+<p><strong>4. Redis&#x751F;&#x6210;ID</strong></p>
+<p>&#x5F53;&#x4F7F;&#x7528;&#x6570;&#x636E;&#x5E93;&#x6765;&#x751F;&#x6210;ID&#x6027;&#x80FD;&#x4E0D;&#x591F;&#x8981;&#x6C42;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x5C1D;&#x8BD5;&#x4F7F;&#x7528;Redis&#x6765;&#x751F;&#x6210;ID&#x3002;&#x8FD9;&#x4E3B;&#x8981;&#x4F9D;&#x8D56;&#x4E8E;Redis&#x662F;&#x5355;&#x7EBF;&#x7A0B;&#x7684;&#xFF0C;&#x6240;&#x4EE5;&#x4E5F;&#x53EF;&#x4EE5;&#x7528;&#x751F;&#x6210;&#x5168;&#x5C40;&#x552F;&#x4E00;&#x7684;ID&#x3002;&#x53EF;&#x4EE5;&#x7528;Redis&#x7684;&#x539F;&#x5B50;&#x64CD;&#x4F5C; INCR&#x548C;INCRBY&#x6765;&#x5B9E;&#x73B0;&#x3002;</p>
+<p>&#x53EF;&#x4EE5;&#x4F7F;&#x7528;Redis&#x96C6;&#x7FA4;&#x6765;&#x83B7;&#x53D6;&#x66F4;&#x9AD8;&#x7684;&#x541E;&#x5410;&#x91CF;&#x3002;&#x5047;&#x5982;&#x4E00;&#x4E2A;&#x96C6;&#x7FA4;&#x4E2D;&#x6709;5&#x53F0;Redis&#x3002;&#x53EF;&#x4EE5;&#x521D;&#x59CB;&#x5316;&#x6BCF;&#x53F0;Redis&#x7684;&#x503C;&#x5206;&#x522B;&#x662F;1,2,3,4,5&#xFF0C;&#x7136;&#x540E;&#x6B65;&#x957F;&#x90FD;&#x662F;5&#x3002;&#x5404;&#x4E2A;Redis&#x751F;&#x6210;&#x7684;ID&#x4E3A;&#xFF1A;</p>
+<p>A&#xFF1A;1,6,11,16,21</p>
+<p>B&#xFF1A;2,7,12,17,22</p>
+<p>C&#xFF1A;3,8,13,18,23</p>
+<p>D&#xFF1A;4,9,14,19,24</p>
+<p>E&#xFF1A;5,10,15,20,25</p>
+<p>&#x8FD9;&#x4E2A;&#xFF0C;&#x968F;&#x4FBF;&#x8D1F;&#x8F7D;&#x5230;&#x54EA;&#x4E2A;&#x673A;&#x786E;&#x5B9A;&#x597D;&#xFF0C;&#x672A;&#x6765;&#x5F88;&#x96BE;&#x505A;&#x4FEE;&#x6539;&#x3002;&#x4F46;&#x662F;3-5&#x53F0;&#x670D;&#x52A1;&#x5668;&#x57FA;&#x672C;&#x80FD;&#x591F;&#x6EE1;&#x8DB3;&#x5668;&#x4E0A;&#xFF0C;&#x90FD;&#x53EF;&#x4EE5;&#x83B7;&#x5F97;&#x4E0D;&#x540C;&#x7684;ID&#x3002;&#x4F46;&#x662F;&#x6B65;&#x957F;&#x548C;&#x521D;&#x59CB;&#x503C;&#x4E00;&#x5B9A;&#x9700;&#x8981;&#x4E8B;&#x5148;&#x9700;&#x8981;&#x4E86;&#x3002;&#x4F7F;&#x7528;Redis&#x96C6;&#x7FA4;&#x4E5F;&#x53EF;&#x4EE5;&#x65B9;&#x5F0F;&#x5355;&#x70B9;&#x6545;&#x969C;&#x7684;&#x95EE;&#x9898;&#x3002;</p>
+<p>&#x53E6;&#x5916;&#xFF0C;&#x6BD4;&#x8F83;&#x9002;&#x5408;&#x4F7F;&#x7528;Redis&#x6765;&#x751F;&#x6210;&#x6BCF;&#x5929;&#x4ECE;0&#x5F00;&#x59CB;&#x7684;&#x6D41;&#x6C34;&#x53F7;&#x3002;&#x6BD4;&#x5982;&#x8BA2;&#x5355;&#x53F7;=&#x65E5;&#x671F;+&#x5F53;&#x65E5;&#x81EA;&#x589E;&#x957F;&#x53F7;&#x3002;&#x53EF;&#x4EE5;&#x6BCF;&#x5929;&#x5728;Redis&#x4E2D;&#x751F;&#x6210;&#x4E00;&#x4E2A;Key&#xFF0C;&#x4F7F;&#x7528;INCR&#x8FDB;&#x884C;&#x7D2F;&#x52A0;&#x3002;</p>
+<p>&#x4F18;&#x70B9;&#xFF1A;</p>
+<p>1&#xFF09;&#x4E0D;&#x4F9D;&#x8D56;&#x4E8E;&#x6570;&#x636E;&#x5E93;&#xFF0C;&#x7075;&#x6D3B;&#x65B9;&#x4FBF;&#xFF0C;&#x4E14;&#x6027;&#x80FD;&#x4F18;&#x4E8E;&#x6570;&#x636E;&#x5E93;&#x3002;</p>
+<p>2&#xFF09;&#x6570;&#x5B57;ID&#x5929;&#x7136;&#x6392;&#x5E8F;&#xFF0C;&#x5BF9;&#x5206;&#x9875;&#x6216;&#x8005;&#x9700;&#x8981;&#x6392;&#x5E8F;&#x7684;&#x7ED3;&#x679C;&#x5F88;&#x6709;&#x5E2E;&#x52A9;&#x3002;</p>
+<p>&#x7F3A;&#x70B9;&#xFF1A;</p>
+<p>1&#xFF09;&#x5982;&#x679C;&#x7CFB;&#x7EDF;&#x4E2D;&#x6CA1;&#x6709;Redis&#xFF0C;&#x8FD8;&#x9700;&#x8981;&#x5F15;&#x5165;&#x65B0;&#x7684;&#x7EC4;&#x4EF6;&#xFF0C;&#x589E;&#x52A0;&#x7CFB;&#x7EDF;&#x590D;&#x6742;&#x5EA6;&#x3002;</p>
+<p>2&#xFF09;&#x9700;&#x8981;&#x7F16;&#x7801;&#x548C;&#x914D;&#x7F6E;&#x7684;&#x5DE5;&#x4F5C;&#x91CF;&#x6BD4;&#x8F83;&#x5927;&#x3002;</p>
+<p><strong>5. Twitter&#x7684;snowflake&#x7B97;&#x6CD5;</strong></p>
+<p>snowflake&#x662F;Twitter&#x5F00;&#x6E90;&#x7684;&#x5206;&#x5E03;&#x5F0F;ID&#x751F;&#x6210;&#x7B97;&#x6CD5;&#xFF0C;&#x7ED3;&#x679C;&#x662F;&#x4E00;&#x4E2A;long&#x578B;&#x7684;ID&#x3002;&#x5176;&#x6838;&#x5FC3;&#x601D;&#x60F3;&#x662F;&#xFF1A;&#x4F7F;&#x7528;41bit&#x4F5C;&#x4E3A;&#x6BEB;&#x79D2;&#x6570;&#xFF0C;10bit&#x4F5C;&#x4E3A;&#x673A;&#x5668;&#x7684;ID&#xFF08;5&#x4E2A;bit&#x662F;&#x6570;&#x636E;&#x4E2D;&#x5FC3;&#xFF0C;5&#x4E2A;bit&#x7684;&#x673A;&#x5668;ID&#xFF09;&#xFF0C;12bit&#x4F5C;&#x4E3A;&#x6BEB;&#x79D2;&#x5185;&#x7684;&#x6D41;&#x6C34;&#x53F7;&#xFF08;&#x610F;&#x5473;&#x7740;&#x6BCF;&#x4E2A;&#x8282;&#x70B9;&#x5728;&#x6BCF;&#x6BEB;&#x79D2;&#x53EF;&#x4EE5;&#x4EA7;&#x751F; 4096 &#x4E2A; ID&#xFF09;&#xFF0C;&#x6700;&#x540E;&#x8FD8;&#x6709;&#x4E00;&#x4E2A;&#x7B26;&#x53F7;&#x4F4D;&#xFF0C;&#x6C38;&#x8FDC;&#x662F;0&#x3002;&#x5177;&#x4F53;&#x5B9E;&#x73B0;&#x7684;&#x4EE3;&#x7801;&#x53EF;&#x4EE5;&#x53C2;&#x770B;<a href="https://github.com/twitter/snowflake&#x3002;" target="_blank">https://github.com/twitter/snowflake&#x3002;</a></p>
+<p>C#&#x4EE3;&#x7801;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre><code>/// &lt;summary&gt;
+    /// From: https://github.com/twitter/snowflake
+    /// An object that generates IDs.
+    /// This is broken into a separate class in case
+    /// we ever want to support multiple worker threads
+    /// per process
+    /// &lt;/summary&gt;
+    public class IdWorker
+    {
+        private long workerId;
+        private long datacenterId;
+        private long sequence = 0L;
+
+        private static long twepoch = 1288834974657L;
+
+        private static long workerIdBits = 5L;
+        private static long datacenterIdBits = 5L;
+        private static long maxWorkerId = -1L ^ (-1L &lt;&lt; (int)workerIdBits);
+        private static long maxDatacenterId = -1L ^ (-1L &lt;&lt; (int)datacenterIdBits);
+        private static long sequenceBits = 12L;
+
+        private long workerIdShift = sequenceBits;
+        private long datacenterIdShift = sequenceBits + workerIdBits;
+        private long timestampLeftShift = sequenceBits + workerIdBits + datacenterIdBits;
+        private long sequenceMask = -1L ^ (-1L &lt;&lt; (int)sequenceBits);
+
+        private long lastTimestamp = -1L;
+        private static object syncRoot = new object();
+
+        public IdWorker(long workerId, long datacenterId)
+        {
+
+            // sanity check for workerId
+            if (workerId &gt; maxWorkerId || workerId &lt; 0)
+            {
+                throw new ArgumentException(string.Format(&quot;worker Id can&apos;t be greater than %d or less than 0&quot;, maxWorkerId));
+            }
+            if (datacenterId &gt; maxDatacenterId || datacenterId &lt; 0)
+            {
+                throw new ArgumentException(string.Format(&quot;datacenter Id can&apos;t be greater than %d or less than 0&quot;, maxDatacenterId));
+            }
+            this.workerId = workerId;
+            this.datacenterId = datacenterId;
+        }
+
+        public long nextId()
+        {
+            lock (syncRoot)
+            {
+                long timestamp = timeGen();
+
+                if (timestamp &lt; lastTimestamp)
+                {
+                    throw new ApplicationException(string.Format(&quot;Clock moved backwards.  Refusing to generate id for %d milliseconds&quot;, lastTimestamp - timestamp));
+                }
+
+                if (lastTimestamp == timestamp)
+                {
+                    sequence = (sequence + 1) &amp; sequenceMask;
+                    if (sequence == 0)
+                    {
+                        timestamp = tilNextMillis(lastTimestamp);
+                    }
+                }
+                else
+                {
+                    sequence = 0L;
+                }
+
+                lastTimestamp = timestamp;
+
+                return ((timestamp - twepoch) &lt;&lt; (int)timestampLeftShift) | (datacenterId &lt;&lt; (int)datacenterIdShift) | (workerId &lt;&lt; (int)workerIdShift) | sequence;
+            }
+        }
+
+        protected long tilNextMillis(long lastTimestamp)
+        {
+            long timestamp = timeGen();
+            while (timestamp &lt;= lastTimestamp)
+            {
+                timestamp = timeGen();
+            }
+            return timestamp;
+        }
+
+        protected long timeGen()
+        {
+            return (long)(DateTime.UtcNow - new DateTime(1970, 1, 1, 0, 0, 0, DateTimeKind.Utc)).TotalMilliseconds;
+        }
+    }
+</code></pre><p>&#x6D4B;&#x8BD5;&#x4EE3;&#x7801;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre><code>private static void TestIdWorker()
+        {
+            HashSet&lt;long&gt; set = new HashSet&lt;long&gt;();
+            IdWorker idWorker1 = new IdWorker(0, 0);
+            IdWorker idWorker2 = new IdWorker(1, 0);
+            Thread t1 = new Thread(() =&gt; DoTestIdWoker(idWorker1, set));
+            Thread t2 = new Thread(() =&gt; DoTestIdWoker(idWorker2, set));
+            t1.IsBackground = true;
+            t2.IsBackground = true;
+
+            t1.Start();
+            t2.Start();
+            try
+            {
+                Thread.Sleep(30000);
+                t1.Abort();
+                t2.Abort();
+            }
+            catch (Exception e)
+            {
+            }
+
+            Console.WriteLine(&quot;done&quot;);
+        }
+
+        private static void DoTestIdWoker(IdWorker idWorker, HashSet&lt;long&gt; set)
+        {
+            while (true)
+            {
+                long id = idWorker.nextId();
+                if (!set.Add(id))
+                {
+                    Console.WriteLine(&quot;duplicate:&quot; + id);
+                }
+
+                Thread.Sleep(1);
+            }
+        }
+</code></pre><p>snowflake&#x7B97;&#x6CD5;&#x53EF;&#x4EE5;&#x6839;&#x636E;&#x81EA;&#x8EAB;&#x9879;&#x76EE;&#x7684;&#x9700;&#x8981;&#x8FDB;&#x884C;&#x4E00;&#x5B9A;&#x7684;&#x4FEE;&#x6539;&#x3002;&#x6BD4;&#x5982;&#x4F30;&#x7B97;&#x672A;&#x6765;&#x7684;&#x6570;&#x636E;&#x4E2D;&#x5FC3;&#x4E2A;&#x6570;&#xFF0C;&#x6BCF;&#x4E2A;&#x6570;&#x636E;&#x4E2D;&#x5FC3;&#x7684;&#x673A;&#x5668;&#x6570;&#x4EE5;&#x53CA;&#x7EDF;&#x4E00;&#x6BEB;&#x79D2;&#x53EF;&#x4EE5;&#x80FD;&#x7684;&#x5E76;&#x53D1;&#x6570;&#x6765;&#x8C03;&#x6574;&#x5728;&#x7B97;&#x6CD5;&#x4E2D;&#x6240;&#x9700;&#x8981;&#x7684;bit&#x6570;&#x3002;</p>
+<p>&#x4F18;&#x70B9;&#xFF1A;</p>
+<p>1&#xFF09;&#x4E0D;&#x4F9D;&#x8D56;&#x4E8E;&#x6570;&#x636E;&#x5E93;&#xFF0C;&#x7075;&#x6D3B;&#x65B9;&#x4FBF;&#xFF0C;&#x4E14;&#x6027;&#x80FD;&#x4F18;&#x4E8E;&#x6570;&#x636E;&#x5E93;&#x3002;</p>
+<p>2&#xFF09;ID&#x6309;&#x7167;&#x65F6;&#x95F4;&#x5728;&#x5355;&#x673A;&#x4E0A;&#x662F;&#x9012;&#x589E;&#x7684;&#x3002;</p>
+<p>&#x7F3A;&#x70B9;&#xFF1A;</p>
+<p>1&#xFF09;&#x5728;&#x5355;&#x673A;&#x4E0A;&#x662F;&#x9012;&#x589E;&#x7684;&#xFF0C;&#x4F46;&#x662F;&#x7531;&#x4E8E;&#x6D89;&#x53CA;&#x5230;&#x5206;&#x5E03;&#x5F0F;&#x73AF;&#x5883;&#xFF0C;&#x6BCF;&#x53F0;&#x673A;&#x5668;&#x4E0A;&#x7684;&#x65F6;&#x949F;&#x4E0D;&#x53EF;&#x80FD;&#x5B8C;&#x5168;&#x540C;&#x6B65;&#xFF0C;&#x4E5F;&#x8BB8;&#x6709;&#x65F6;&#x5019;&#x4E5F;&#x4F1A;&#x51FA;&#x73B0;&#x4E0D;&#x662F;&#x5168;&#x5C40;&#x9012;&#x589E;&#x7684;&#x60C5;&#x51B5;&#x3002;</p>
+<p><strong>6. &#x5229;&#x7528;zookeeper&#x751F;&#x6210;&#x552F;&#x4E00;ID</strong></p>
+<pre><code>zookeeper&#x4E3B;&#x8981;&#x901A;&#x8FC7;&#x5176;znode&#x6570;&#x636E;&#x7248;&#x672C;&#x6765;&#x751F;&#x6210;&#x5E8F;&#x5217;&#x53F7;&#xFF0C;&#x53EF;&#x4EE5;&#x751F;&#x6210;32&#x4F4D;&#x548C;64&#x4F4D;&#x7684;&#x6570;&#x636E;&#x7248;&#x672C;&#x53F7;&#xFF0C;&#x5BA2;&#x6237;&#x7AEF;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x8FD9;&#x4E2A;&#x7248;&#x672C;&#x53F7;&#x6765;&#x4F5C;&#x4E3A;&#x552F;&#x4E00;&#x7684;&#x5E8F;&#x5217;&#x53F7;&#x3002;
+&#x5F88;&#x5C11;&#x4F1A;&#x4F7F;&#x7528;zookeeper&#x6765;&#x751F;&#x6210;&#x552F;&#x4E00;ID&#x3002;&#x4E3B;&#x8981;&#x662F;&#x7531;&#x4E8E;&#x9700;&#x8981;&#x4F9D;&#x8D56;zookeeper&#xFF0C;&#x5E76;&#x4E14;&#x662F;&#x591A;&#x6B65;&#x8C03;&#x7528;API&#xFF0C;&#x5982;&#x679C;&#x5728;&#x7ADE;&#x4E89;&#x8F83;&#x5927;&#x7684;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x9700;&#x8981;&#x8003;&#x8651;&#x4F7F;&#x7528;&#x5206;&#x5E03;&#x5F0F;&#x9501;&#x3002;&#x56E0;&#x6B64;&#xFF0C;&#x6027;&#x80FD;&#x5728;&#x9AD8;&#x5E76;&#x53D1;&#x7684;&#x5206;&#x5E03;&#x5F0F;&#x73AF;&#x5883;&#x4E0B;&#xFF0C;&#x4E5F;&#x4E0D;&#x751A;&#x7406;&#x60F3;&#x3002;
+
+7. MongoDB&#x7684;ObjectId
+MongoDB&#x7684;ObjectId&#x548C;snowflake&#x7B97;&#x6CD5;&#x7C7B;&#x4F3C;&#x3002;&#x5B83;&#x8BBE;&#x8BA1;&#x6210;&#x8F7B;&#x91CF;&#x578B;&#x7684;&#xFF0C;&#x4E0D;&#x540C;&#x7684;&#x673A;&#x5668;&#x90FD;&#x80FD;&#x7528;&#x5168;&#x5C40;&#x552F;&#x4E00;&#x7684;&#x540C;&#x79CD;&#x65B9;&#x6CD5;&#x65B9;&#x4FBF;&#x5730;&#x751F;&#x6210;&#x5B83;&#x3002;MongoDB &#x4ECE;&#x4E00;&#x5F00;&#x59CB;&#x5C31;&#x8BBE;&#x8BA1;&#x7528;&#x6765;&#x4F5C;&#x4E3A;&#x5206;&#x5E03;&#x5F0F;&#x6570;&#x636E;&#x5E93;&#xFF0C;&#x5904;&#x7406;&#x591A;&#x4E2A;&#x8282;&#x70B9;&#x662F;&#x4E00;&#x4E2A;&#x6838;&#x5FC3;&#x8981;&#x6C42;&#x3002;&#x4F7F;&#x5176;&#x5728;&#x5206;&#x7247;&#x73AF;&#x5883;&#x4E2D;&#x8981;&#x5BB9;&#x6613;&#x751F;&#x6210;&#x5F97;&#x591A;&#x3002;
+</code></pre><p>&#x5176;&#x683C;&#x5F0F;&#x5982;&#x4E0B;&#xFF1A;</p>
+<p><img src="http://images.blogjava.net/blogjava_net/dongbule/46046/o_111.PNG" alt="img"></p>
+<p>&#x524D;4 &#x4E2A;&#x5B57;&#x8282;&#x662F;&#x4ECE;&#x6807;&#x51C6;&#x7EAA;&#x5143;&#x5F00;&#x59CB;&#x7684;&#x65F6;&#x95F4;&#x6233;&#xFF0C;&#x5355;&#x4F4D;&#x4E3A;&#x79D2;&#x3002;&#x65F6;&#x95F4;&#x6233;&#xFF0C;&#x4E0E;&#x968F;&#x540E;&#x7684;5 &#x4E2A;&#x5B57;&#x8282;&#x7EC4;&#x5408;&#x8D77;&#x6765;&#xFF0C;&#x63D0;&#x4F9B;&#x4E86;&#x79D2;&#x7EA7;&#x522B;&#x7684;&#x552F;&#x4E00;&#x6027;&#x3002;&#x7531;&#x4E8E;&#x65F6;&#x95F4;&#x6233;&#x5728;&#x524D;&#xFF0C;&#x8FD9;&#x610F;&#x5473;&#x7740;ObjectId &#x5927;&#x81F4;&#x4F1A;&#x6309;&#x7167;&#x63D2;&#x5165;&#x7684;&#x987A;&#x5E8F;&#x6392;&#x5217;&#x3002;&#x8FD9;&#x5BF9;&#x4E8E;&#x67D0;&#x4E9B;&#x65B9;&#x9762;&#x5F88;&#x6709;&#x7528;&#xFF0C;&#x5982;&#x5C06;&#x5176;&#x4F5C;&#x4E3A;&#x7D22;&#x5F15;&#x63D0;&#x9AD8;&#x6548;&#x7387;&#x3002;&#x8FD9;4 &#x4E2A;&#x5B57;&#x8282;&#x4E5F;&#x9690;&#x542B;&#x4E86;&#x6587;&#x6863;&#x521B;&#x5EFA;&#x7684;&#x65F6;&#x95F4;&#x3002;&#x7EDD;&#x5927;&#x591A;&#x6570;&#x5BA2;&#x6237;&#x7AEF;&#x7C7B;&#x5E93;&#x90FD;&#x4F1A;&#x516C;&#x5F00;&#x4E00;&#x4E2A;&#x65B9;&#x6CD5;&#x4ECE;ObjectId &#x83B7;&#x53D6;&#x8FD9;&#x4E2A;&#x4FE1;&#x606F;&#x3002;
+&#x63A5;&#x4E0B;&#x6765;&#x7684;3 &#x5B57;&#x8282;&#x662F;&#x6240;&#x5728;&#x4E3B;&#x673A;&#x7684;&#x552F;&#x4E00;&#x6807;&#x8BC6;&#x7B26;&#x3002;&#x901A;&#x5E38;&#x662F;&#x673A;&#x5668;&#x4E3B;&#x673A;&#x540D;&#x7684;&#x6563;&#x5217;&#x503C;&#x3002;&#x8FD9;&#x6837;&#x5C31;&#x53EF;&#x4EE5;&#x786E;&#x4FDD;&#x4E0D;&#x540C;&#x4E3B;&#x673A;&#x751F;&#x6210;&#x4E0D;&#x540C;&#x7684;ObjectId&#xFF0C;&#x4E0D;&#x4EA7;&#x751F;&#x51B2;&#x7A81;&#x3002;
+&#x4E3A;&#x4E86;&#x786E;&#x4FDD;&#x5728;&#x540C;&#x4E00;&#x53F0;&#x673A;&#x5668;&#x4E0A;&#x5E76;&#x53D1;&#x7684;&#x591A;&#x4E2A;&#x8FDB;&#x7A0B;&#x4EA7;&#x751F;&#x7684;ObjectId &#x662F;&#x552F;&#x4E00;&#x7684;&#xFF0C;&#x63A5;&#x4E0B;&#x6765;&#x7684;&#x4E24;&#x5B57;&#x8282;&#x6765;&#x81EA;&#x4EA7;&#x751F;ObjectId &#x7684;&#x8FDB;&#x7A0B;&#x6807;&#x8BC6;&#x7B26;&#xFF08;PID&#xFF09;&#x3002;
+&#x524D;9 &#x5B57;&#x8282;&#x4FDD;&#x8BC1;&#x4E86;&#x540C;&#x4E00;&#x79D2;&#x949F;&#x4E0D;&#x540C;&#x673A;&#x5668;&#x4E0D;&#x540C;&#x8FDB;&#x7A0B;&#x4EA7;&#x751F;&#x7684;ObjectId &#x662F;&#x552F;&#x4E00;&#x7684;&#x3002;&#x540E;3 &#x5B57;&#x8282;&#x5C31;&#x662F;&#x4E00;&#x4E2A;&#x81EA;&#x52A8;&#x589E;&#x52A0;&#x7684;&#x8BA1;&#x6570;&#x5668;&#xFF0C;&#x786E;&#x4FDD;&#x76F8;&#x540C;&#x8FDB;&#x7A0B;&#x540C;&#x4E00;&#x79D2;&#x4EA7;&#x751F;&#x7684;ObjectId &#x4E5F;&#x662F;&#x4E0D;&#x4E00;&#x6837;&#x7684;&#x3002;&#x540C;&#x4E00;&#x79D2;&#x949F;&#x6700;&#x591A;&#x5141;&#x8BB8;&#x6BCF;&#x4E2A;&#x8FDB;&#x7A0B;&#x62E5;&#x6709;2563&#xFF08;16 777 216&#xFF09;&#x4E2A;&#x4E0D;&#x540C;&#x7684;ObjectId&#x3002;</p>
+<p>&#x5B9E;&#x73B0;&#x7684;&#x6E90;&#x7801;&#x53EF;&#x4EE5;&#x5230;MongoDB&#x5B98;&#x65B9;&#x7F51;&#x7AD9;&#x4E0B;&#x8F7D;&#x3002;</p>
+<h4 id="sequence">sequence</h4>
+<ul>
+<li>oracle&#x7B49;&#x4E00;&#x4E9B;&#x6570;&#x636E;&#x5E93;&#x6CA1;&#x6709;&#x5982;mysql&#x50CF;ID&#x8FD9;&#x79CD;&#x7684;&#x53EF;&#x4EE5;&#x8BBE;&#x7F6E;&#x81EA;&#x589E;&#x7684;&#x5B57;&#x6BB5;&#xFF0C;&#x6240;&#x6709;&#x9700;&#x8981;&#x901A;&#x8FC7;&#x4E13;&#x95E8;&#x8BBE;&#x7F6E;&#x4E00;&#x4E2A;&#x503C;&#x6765;&#x81EA;&#x589E;&#xFF0C;&#x4E00;&#x822C;&#x6709;&#x4E24;&#x4E2A;&#x7528;&#x9014;&#xFF1A;</li>
+</ul>
+<blockquote>
+<p>&#x4E00;&#xFF1A;&#x4F5C;&#x4E3A;&#x4EE3;&#x7406;&#x4E3B;&#x952E;&#xFF0C;&#x552F;&#x4E00;&#x8BC6;&#x522B;&#xFF1B;ID = sequence_name.nextval &#x8FD9;&#x79CD;&#x64CD;&#x4F5C;</p>
+<p>&#x4E8C;&#xFF1A;&#x7528;&#x4E8E;&#x8BB0;&#x5F55;&#x6570;&#x636E;&#x5E93;&#x4E2D;&#x6700;&#x65B0;&#x52A8;&#x4F5C;&#x7684;&#x8BED;&#x53E5;&#xFF0C;&#x53EA;&#x8981;&#x8BED;&#x53E5;&#x6709;&#x52A8;&#x4F5C;(I/U/D&#x7B49;)&#xFF0C;sequence&#x53F7;&#x90FD;&#x4F1A;&#x968F;&#x7740;&#x66F4;&#x65B0;&#xFF0C;&#x6BCF;&#x6709;IUD&#x5C31;sequence_name+1&#xFF0C;&#x914D;&#x5408;&#x65E5;&#x5FD7;&#xFF0C;&#x6211;&#x4EEC;&#x5C31;&#x53EF;&#x4EE5;&#x6839;&#x636E;sequence&#x53F7;&#x6765;select&#x51FA;&#x66F4;&#x65B0;&#x7684;&#x8BED;&#x53E5;&#x3002;</p>
+</blockquote>
+<ol>
+<li><p><strong>Mybatis-Plus</strong> &#x5DF2;&#x7ECF;&#x5B9A;&#x4E49;&#x597D;&#x4E86;&#x5E38;&#x89C1;&#x7684;&#x6570;&#x636E;&#x5E93;&#x4E3B;&#x952E;&#x5E8F;&#x5217;&#xFF0C;&#x6211;&#x4EEC;&#x9996;&#x5148;&#x53EA;&#x9700;&#x8981;&#x5728; <strong>@Configuration</strong> &#x7C7B;&#x4E2D;&#x5B9A;&#x4E49;&#x597D; <strong>@Bean</strong>&#xFF1A;</p>
+<blockquote>
+<p><strong>Mybatis-Plus</strong> &#x5185;&#x7F6E;&#x4E86;&#x5982;&#x4E0B;&#x6570;&#x636E;&#x5E93;&#x4E3B;&#x952E;&#x5E8F;&#x5217;&#xFF08;&#x5982;&#x679C;&#x5185;&#x7F6E;&#x652F;&#x6301;&#x4E0D;&#x6EE1;&#x8DB3;&#x4F60;&#x7684;&#x9700;&#x6C42;&#xFF0C;&#x53EF;&#x5B9E;&#x73B0; &#x63A5;&#x53E3;&#x6765;&#x8FDB;&#x884C;&#x6269;&#x5C55;&#xFF09;&#xFF1A;</p>
+<ul>
+<li><strong>DB2KeyGenerator</strong></li>
+<li><strong>H2KeyGenerator</strong></li>
+<li><strong>KingbaseKeyGenerator</strong></li>
+<li><strong>OracleKeyGenerator</strong></li>
+<li><strong>PostgreKeyGenerator</strong></li>
+</ul>
+</blockquote>
+<pre><code class="lang-java"><span class="hljs-meta">@Bean</span>
+<span class="hljs-function"><span class="hljs-keyword">public</span> OracleKeyGenerator <span class="hljs-title">oracleKeyGenerator</span><span class="hljs-params">()</span></span>{
+    <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> OracleKeyGenerator();
+}
+<span class="hljs-number">1234</span>
+</code></pre>
+</li>
+<li><p>&#x7136;&#x540E;&#x5B9E;&#x4F53;&#x7C7B;&#x914D;&#x7F6E;&#x4E3B;&#x952E; <strong>Sequence</strong>&#xFF0C;&#x6307;&#x5B9A;&#x4E3B;&#x952E;&#x7B56;&#x7565;&#x4E3A; <strong>IdType.INPUT</strong> &#x5373;&#x53EF;&#xFF1A;</p>
+<blockquote>
+<p><strong>&#x63D0;&#x793A;</strong>&#xFF1A;&#x652F;&#x6301;&#x7236;&#x7C7B;&#x5B9A;&#x4E49; <strong>@KeySequence</strong> &#x5B50;&#x7C7B;&#x4F7F;&#x7528;&#xFF0C;&#x8FD9;&#x6837;&#x5C31;&#x53EF;&#x4EE5;&#x51E0;&#x4E2A;&#x8868;&#x5171;&#x7528;&#x4E00;&#x4E2A; <strong>Sequence</strong></p>
+</blockquote>
+<pre><code class="lang-java"><span class="hljs-meta">@TableName</span>(<span class="hljs-string">&quot;TEST_SEQUSER&quot;</span>)
+<span class="hljs-meta">@KeySequence</span>(<span class="hljs-string">&quot;SEQ_TEST&quot;</span>)<span class="hljs-comment">//&#x7C7B;&#x6CE8;&#x89E3;</span>
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">TestSequser</span></span>{
+  <span class="hljs-meta">@TableId</span>(value = <span class="hljs-string">&quot;ID&quot;</span>, type = IdType.INPUT)
+  <span class="hljs-keyword">private</span> Long id;
+}
+<span class="hljs-number">123456</span>
+</code></pre>
+</li>
+<li><p>&#x5982;&#x679C;&#x4E3B;&#x952E;&#x662F; <strong>String</strong> &#x7C7B;&#x578B;&#x7684;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#xFF1A;</p>
+<blockquote>
+<p>&#x5982;&#x4F55;&#x4F7F;&#x7528; <strong>Sequence</strong> <strong>String</strong> <strong>varchar2</strong> <strong>sequence</strong> &#x4F5C;&#x4E3A;&#x4E3B;&#x952E;&#xFF0C;&#x4F46;&#x662F;&#x5B9E;&#x4F53;&#x4E3B;&#x952E;&#x7C7B;&#x578B;&#x662F; &#x4E5F;&#x5C31;&#x662F;&#x8BF4;&#xFF0C;&#x8868;&#x7684;&#x4E3B;&#x952E;&#x662F; &#xFF0C;&#x4F46;&#x662F;&#x9700;&#x8981;&#x4ECE;&#x4E2D;&#x53D6;&#x503C;</p>
+<ul>
+<li>&#x5B9E;&#x4F53;&#x5B9A;&#x4E49; @KeySequence &#x6CE8;&#x89E3; clazz &#x6307;&#x5B9A;&#x7C7B;&#x578B; String.class</li>
+<li>&#x5B9E;&#x4F53;&#x5B9A;&#x4E49;&#x4E3B;&#x952E;&#x7684;&#x7C7B;&#x578B; String</li>
+<li>&#x6CE8;&#x610F;&#xFF1A;oracle &#x7684; sequence &#x8FD4;&#x56DE;&#x7684;&#x662F; Long &#x7C7B;&#x578B;&#xFF0C;&#x5982;&#x679C;&#x4E3B;&#x952E;&#x7C7B;&#x578B;&#x662F; Integer&#xFF0C;&#x53EF;&#x80FD;&#x4F1A;&#x5F15;&#x8D77; ClassCastException</li>
+</ul>
+</blockquote>
+<pre><code class="lang-java"><span class="hljs-meta">@KeySequence</span>(value = <span class="hljs-string">&quot;SEQ_ORACLE_STRING_KEY&quot;</span>, clazz = String.class)
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">YourEntity</span></span>{
+    <span class="hljs-meta">@TableId</span>(value = <span class="hljs-string">&quot;ID_STR&quot;</span>, type = IdType.INPUT)
+    <span class="hljs-keyword">private</span> String idStr;
+}
+</code></pre>
+</li>
+</ol>
+<h4 id="idtype">IdType</h4>
+<ul>
+<li><p>mybatis-PLUS&#x9ED8;&#x8BA4;&#x5B9E;&#x73B0;&#x7684;&#x662F;&#x96EA;&#x82B1;&#x7B97;&#x6CD5;&#xFF0C;&#x82E5;&#x9700;&#x8981;&#x6362;&#x6210;&#x81EA;&#x589E;</p>
+</li>
+<li><p>&#x5B9E;&#x4F53;&#x7C7B;&#x5B57;&#x6BB5;&#x4E0A; @TableId(type = IdType.AUTO)</p>
+</li>
+<li><p>&#x6570;&#x636E;&#x5E93;&#x5B57;&#x6BB5;&#x4E00;&#x5B9A;&#x8981;&#x662F;&#x81EA;&#x589E;&#xFF01;</p>
+</li>
+<li><p>@TableId&#x5173;&#x952E;&#x5B57;&#x8BF4;&#x660E;</p>
+</li>
+</ul>
+<pre><code>public enum IdType {
+    AUTO(0),//&#x81EA;&#x589E;
+    NONE(1),//&#x4E0D;&#x505A;&#x64CD;&#x4F5C;
+    INPUT(2),//&#x624B;&#x52A8;&#x8F93;&#x5165;
+    ASSIGN_ID(3),//&#x9ED8;&#x8BA4;&#x7684;&#x5168;&#x5C40;&#x552F;&#x4E00;ID&#xFF1A;&#x96EA;&#x82B1;&#x7B97;&#x6CD5;
+    ASSIGN_UUID(4),//&#x5168;&#x5C40;&#x552F;&#x4E00;ID
+    /** @deprecated */
+    @Deprecated
+    ID_WORKER(3),
+    /** @deprecated */
+    @Deprecated
+    ID_WORKER_STR(3),
+    /** @deprecated */
+    @Deprecated
+    UUID(4);
+
+    private final int key;
+
+    private IdType(int key) {
+        this.key = key;
+    }
+
+    public int getKey() {
+        return this.key;
+    }
+}
+</code></pre><h4 id="&#x66F4;&#x65B0;">&#x66F4;&#x65B0;</h4>
+<pre><code>@Test
+public void testUpdate(){
+    User user = new User();
+    user.setId(5l);
+    user.setName(&quot;eternal&quot;);
+    user.setAge(221);
+    user.setEmail(&quot;254908537@qq.com&quot;);
+
+    int result = userMapper.updateById(user);
+
+    System.out.println(result);
+    System.out.println(user);
+}
+</code></pre><h4 id="&#x81EA;&#x52A8;&#x586B;&#x5145;">&#x81EA;&#x52A8;&#x586B;&#x5145;</h4>
+<blockquote>
+<p>&#x65B9;&#x5F0F;&#x4E00;&#xFF1A;&#x6570;&#x636E;&#x5E93;&#x7EA7;&#x522B;</p>
+</blockquote>
+<p>1&#x3001;&#x5728;&#x8868;&#x4E2D;&#x65B0;&#x589E;&#x5B57;&#x6BB5; create_time, update_time</p>
+<p>&#x963F;&#x91CC;&#x5F00;&#x53D1;&#x624B;&#x518C;&#x6570;&#x636E;&#x5E93;&#x5FC5;&#x5907;&#xFF1A;</p>
+<pre><code>create table `test`(
+        `id` bigint unsigned not null auto_increment,
+        `gmt_create` datetime null default current_timestamp,
+        `gmt_modified` datetime null default current_timestamp on update current_timestamp,
+        primary key(`id`)
+        );
+</code></pre><p>&#x6216;&#x8005;&#x53EF;&#x89C6;&#x5316;&#x64CD;&#x4F5C;</p>
+<p><img src="F:\Typora&#x6570;&#x636E;&#x50A8;&#x5B58;\&#x6570;&#x636E;&#x5E93;\mybatisPlus.assets\image-20200731203010880.png" alt="image-20200731203010880"></p>
+<p>2&#x3001;&#x518D;&#x6B21;&#x6D4B;&#x8BD5;&#x63D2;&#x5165;&#x65B9;&#x6CD5;&#xFF0C;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x5148;&#x628A;&#x5B9E;&#x4F53;&#x7C7B;&#x540C;&#x6B65;&#xFF01;</p>
+<pre><code>private Date createTime;
+private Date updateTime;
+</code></pre><blockquote>
+<p>&#x65B9;&#x5F0F;&#x4E8C;&#xFF1A;&#x4EE3;&#x7801;&#x7EA7;&#x522B;</p>
+<p>&#xFF08;&#x5DE5;&#x4F5C;&#x65F6;&#x7A81;&#x7136;&#x8981;&#x5BF9;&#x67D0;&#x4E2A;&#x5C5E;&#x6027;&#x8FDB;&#x884C;&#x586B;&#x5145;&#xFF0C;&#x53C8;&#x4E0D;&#x80FD;&#x66F4;&#x6539;&#x6570;&#x636E;&#x5E93;&#xFF0C;&#x60F3;&#x8981;&#x81EA;&#x52A8;&#x586B;&#x5145;&#x5C31;&#x5F97;&#x81EA;&#x5DF1;&#x7F16;&#x5199;&#x4E00;&#x5957;&#x5DE5;&#x5177;&#x4F1A;&#x81EA;&#x52A8;&#x5C06;&#x9700;&#x8981;&#x586B;&#x5145;&#x7684;sql&#x8BED;&#x53E5;&#x62FC;&#x63A5;&#x4E0A;&#x53BB;&#xFF0C;&#x4E0B;&#x9762;&#x4E3A;&#x8BE5;mybatisplus&#x7F16;&#x5199;&#x597D;&#x7684;&#x5DE5;&#x5177;&#xFF09;</p>
+</blockquote>
+<p>1&#x3001;&#x5220;&#x9664;&#x6570;&#x636E;&#x5E93;&#x7684;&#x9ED8;&#x8BA4;&#x503C;&#x3001;&#x66F4;&#x65B0;&#x64CD;&#x4F5C;&#xFF01;</p>
+<p><img src="F:\Typora&#x6570;&#x636E;&#x50A8;&#x5B58;\&#x6570;&#x636E;&#x5E93;\mybatisPlus.assets\image-20200731203223163.png" alt="image-20200731203223163"></p>
+<p>2&#x3001;&#x5B9E;&#x4F53;&#x7C7B;&#x5B57;&#x6BB5;&#x5C5E;&#x6027;&#x4E0A;&#x9700;&#x8981;&#x589E;&#x52A0;&#x6CE8;&#x89E3;</p>
+<pre><code>//&#x5BF9;&#x8BE5;&#x7C7B;&#x7684;&#x6BCF;&#x6B21;&#x7684;&#x63D2;&#x5165;&#x64CD;&#x4F5C;&#xFF0C;&#x8BE5;&#x5C5E;&#x6027;&#x90FD;&#x4F1A;&#x89E6;&#x53D1;&#x4E00;&#x4E2A;&#x81EA;&#x52A8;&#x586B;&#x5145;handler&#x5904;&#x7406;&#x8BE5;&#x5C5E;&#x6027;&#x7684;&#x503C;&#xFF0C;&#x6B64;&#x5904;&#x4E3A;&#x586B;&#x5145;&#x4E0B;&#x9762;&#x7684;Date&#x7C7B;&#x578B;
+@TableField(fill = FieldFill.INSERT)
+private Date gmt_create;
+@TableField(fill = FieldFill.INSERT_UPDATE)
+private Date gmt_modified;
+</code></pre><p>3&#x3001;&#x7F16;&#x5199;&#x5904;&#x7406;&#x5668;&#x6765;&#x5904;&#x7406;&#x8FD9;&#x4E2A;&#x6CE8;&#x89E3;&#x5373;&#x53EF;&#xFF01;</p>
+<pre><code>@Slf4j//&#x65E5;&#x5FD7;
+@Component// IOC&#x52A0;&#x5165;
+public class MyMetaObjectHandler implements MetaObjectHandler {
+    @Override
+    public void insertFill(MetaObject metaObject) {
+        log.info(&quot;start insert fill..&quot;);
+        this.setFieldValByName(&quot;gmt_create&quot;,new Date(),metaObject);
+        this.setFieldValByName(&quot;gmt_modified&quot;,new Date(),metaObject);
+    }
+
+    @Override
+    public void updateFill(MetaObject metaObject) {
+        log.info(&quot;start update fill..&quot;);
+        this.setFieldValByName(&quot;gmt_modified&quot;,new Date(),metaObject);
+    }
+}
+</code></pre><h4 id="&#x4E50;&#x89C2;&#x9501;&#x63D2;&#x4EF6;">&#x4E50;&#x89C2;&#x9501;&#x63D2;&#x4EF6;</h4>
+<h4 id="&#x4E3B;&#x8981;&#x9002;&#x7528;&#x573A;&#x666F;">&#x4E3B;&#x8981;&#x9002;&#x7528;&#x573A;&#x666F;</h4>
+<p>&#x610F;&#x56FE;&#xFF1A;</p>
+<p>&#x5F53;&#x8981;&#x66F4;&#x65B0;&#x4E00;&#x6761;&#x8BB0;&#x5F55;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x5E0C;&#x671B;&#x8FD9;&#x6761;&#x8BB0;&#x5F55;&#x6CA1;&#x6709;&#x88AB;&#x522B;&#x4EBA;&#x66F4;&#x65B0;</p>
+<p>&#x4E50;&#x89C2;&#x9501;&#x5B9E;&#x73B0;&#x65B9;&#x5F0F;&#xFF1A;</p>
+<ul>
+<li>&#x53D6;&#x51FA;&#x8BB0;&#x5F55;&#x65F6;&#xFF0C;&#x83B7;&#x53D6;&#x5F53;&#x524D;version</li>
+<li>&#x66F4;&#x65B0;&#x65F6;&#xFF0C;&#x5E26;&#x4E0A;&#x8FD9;&#x4E2A;version</li>
+<li>&#x6267;&#x884C;&#x66F4;&#x65B0;&#x65F6;&#xFF0C; set version = newVersion where version = oldVersion</li>
+<li>&#x5982;&#x679C;version&#x4E0D;&#x5BF9;&#xFF0C;&#x5C31;&#x66F4;&#x65B0;&#x5931;&#x8D25;</li>
+</ul>
+<p><strong>&#x4E50;&#x89C2;&#x9501;&#x914D;&#x7F6E;&#x9700;&#x8981;2&#x6B65; &#x8BB0;&#x5F97;&#x4E24;&#x6B65;</strong></p>
+<p><strong>&#x63D2;&#x4EF6;&#x914D;&#x7F6E;1.&#x63D2;&#x4EF6;&#x914D;&#x7F6E;</strong></p>
+<p>spring xml:</p>
+<pre><code class="lang-xml"><span class="hljs-tag">&lt;<span class="hljs-name">bean</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;com.baomidou.mybatisplus.extension.plugins.OptimisticLockerInterceptor&quot;</span>/&gt;</span>
+</code></pre>
+<p>spring boot:</p>
+<pre><code class="lang-java"><span class="hljs-meta">@Bean</span>
+<span class="hljs-function"><span class="hljs-keyword">public</span> OptimisticLockerInterceptor <span class="hljs-title">optimisticLockerInterceptor</span><span class="hljs-params">()</span> </span>{
+    <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> OptimisticLockerInterceptor();
+}
+</code></pre>
+<p><strong>2.&#x6CE8;&#x89E3;&#x5B9E;&#x4F53;&#x5B57;&#x6BB5; <code>@Version</code> &#x5FC5;&#x987B;&#x8981;!</strong></p>
+<pre><code class="lang-java"><span class="hljs-meta">@Version</span>
+<span class="hljs-keyword">private</span> Integer version;
+</code></pre>
+<p>&#x7279;&#x522B;&#x8BF4;&#x660E;:</p>
+<ul>
+<li><strong>&#x652F;&#x6301;&#x7684;&#x6570;&#x636E;&#x7C7B;&#x578B;&#x53EA;&#x6709;:int,Integer,long,Long,Date,Timestamp,LocalDateTime</strong></li>
+<li>&#x6574;&#x6570;&#x7C7B;&#x578B;&#x4E0B; <code>newVersion = oldVersion + 1</code></li>
+<li><code>newVersion</code> &#x4F1A;&#x56DE;&#x5199;&#x5230; <code>entity</code> &#x4E2D;</li>
+<li>&#x4EC5;&#x652F;&#x6301; <code>updateById(id)</code> &#x4E0E; <code>update(entity, wrapper)</code> &#x65B9;&#x6CD5;</li>
+<li><strong>&#x5728; <code>update(entity, wrapper)</code> &#x65B9;&#x6CD5;&#x4E0B;, <code>wrapper</code> &#x4E0D;&#x80FD;&#x590D;&#x7528;!!!</strong></li>
+</ul>
+<h4 id="select">Select</h4>
+<pre><code>// &#x6D4B;&#x8BD5;&#x67E5;&#x8BE2;
+@Test
+public void testSelectById(){
+User user = userMapper.selectById(1L);
+System.out.println(user);
+}
+// &#x6D4B;&#x8BD5;&#x6279;&#x91CF;&#x67E5;&#x8BE2;&#xFF01;
+@Test
+public void testSelectByBatchId(){
+List&lt;User&gt; users = userMapper.selectBatchIds(Arrays.asList(1, 2, 3));
+users.forEach(System.out::println);
+}
+// &#x6309;&#x6761;&#x4EF6;&#x67E5;&#x8BE2;&#x4E4B;&#x4E00;&#x4F7F;&#x7528;map&#x64CD;&#x4F5C;&#xFF0C;map&#x4E2D;&#x7684;&#x53C2;&#x6570;&#x5728;sql&#x81EA;&#x52A8;&#x8F6C;&#x6362;&#x6210;where&#x6761;&#x4EF6;&#xFF0C;&#x4E0A;&#x9762;&#x7684;&#x90FD;&#x9700;&#x8981;ID
+@Test
+public void testSelectByBatchIds(){
+HashMap&lt;String, Object&gt; map = new HashMap&lt;&gt;();
+// &#x81EA;&#x5B9A;&#x4E49;&#x8981;&#x67E5;&#x8BE2;
+map.put(&quot;name&quot;,&quot;&#x72C2;&#x795E;&#x8BF4;Java&quot;);
+map.put(&quot;age&quot;,3);
+List&lt;User&gt; users = userMapper.selectByMap(map);
+users.forEach(System.out::println);
+}
+</code></pre><h4 id="&#x5206;&#x9875;&#x67E5;&#x8BE2;">&#x5206;&#x9875;&#x67E5;&#x8BE2;</h4>
+<p>1&#x3001;&#x539F;&#x59CB;&#x7684; limit &#x8FDB;&#x884C;&#x5206;&#x9875;</p>
+<p> 2&#x3001;pageHelper &#x7B2C;&#x4E09;&#x65B9;&#x63D2;&#x4EF6;</p>
+<p> 3&#x3001;MP &#x5176;&#x5B9E;&#x4E5F;&#x5185;&#x7F6E;&#x4E86;&#x5206;&#x9875;&#x63D2;&#x4EF6;&#xFF01;</p>
+<p>&#x914D;&#x7F6E;&#xFF1A;</p>
+<pre><code class="lang-xml"><span class="hljs-comment">&lt;!-- spring xml &#x65B9;&#x5F0F; --&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">property</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;plugins&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">array</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">bean</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;com.baomidou.mybatisplus.extension.plugins.PaginationInterceptor&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">property</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;sqlParser&quot;</span> <span class="hljs-attr">ref</span>=<span class="hljs-string">&quot;&#x81EA;&#x5B9A;&#x4E49;&#x89E3;&#x6790;&#x7C7B;&#x3001;&#x53EF;&#x4EE5;&#x6CA1;&#x6709;&quot;</span>/&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">property</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;dialectClazz&quot;</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;&#x81EA;&#x5B9A;&#x4E49;&#x65B9;&#x8A00;&#x7C7B;&#x3001;&#x53EF;&#x4EE5;&#x6CA1;&#x6709;&quot;</span>/&gt;</span>
+            <span class="hljs-comment">&lt;!-- COUNT SQL &#x89E3;&#x6790;.&#x53EF;&#x4EE5;&#x6CA1;&#x6709; --&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">property</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;countSqlParser&quot;</span> <span class="hljs-attr">ref</span>=<span class="hljs-string">&quot;countSqlParser&quot;</span>/&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">bean</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">array</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">property</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">bean</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;countSqlParser&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;com.baomidou.mybatisplus.extension.plugins.pagination.optimize.JsqlParserCountOptimize&quot;</span>&gt;</span>
+    <span class="hljs-comment">&lt;!-- &#x8BBE;&#x7F6E;&#x4E3A; true &#x53EF;&#x4EE5;&#x4F18;&#x5316;&#x90E8;&#x5206; left join &#x7684;sql --&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">property</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;optimizeJoin&quot;</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;true&quot;</span>/&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">bean</span>&gt;</span>
+</code></pre>
+<pre><code class="lang-java"><span class="hljs-comment">//Spring boot&#x65B9;&#x5F0F;</span>
+<span class="hljs-meta">@EnableTransactionManagement</span>
+<span class="hljs-meta">@Configuration</span>
+<span class="hljs-meta">@MapperScan</span>(<span class="hljs-string">&quot;com.baomidou.cloud.service.*.mapper*&quot;</span>)
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">MybatisPlusConfig</span> </span>{
+
+    <span class="hljs-meta">@Bean</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> PaginationInterceptor <span class="hljs-title">paginationInterceptor</span><span class="hljs-params">()</span> </span>{
+        PaginationInterceptor paginationInterceptor = <span class="hljs-keyword">new</span> PaginationInterceptor();
+        <span class="hljs-comment">// &#x8BBE;&#x7F6E;&#x8BF7;&#x6C42;&#x7684;&#x9875;&#x9762;&#x5927;&#x4E8E;&#x6700;&#x5927;&#x9875;&#x540E;&#x64CD;&#x4F5C;&#xFF0C; true&#x8C03;&#x56DE;&#x5230;&#x9996;&#x9875;&#xFF0C;false &#x7EE7;&#x7EED;&#x8BF7;&#x6C42;  &#x9ED8;&#x8BA4;false</span>
+        <span class="hljs-comment">// paginationInterceptor.setOverflow(false);</span>
+        <span class="hljs-comment">// &#x8BBE;&#x7F6E;&#x6700;&#x5927;&#x5355;&#x9875;&#x9650;&#x5236;&#x6570;&#x91CF;&#xFF0C;&#x9ED8;&#x8BA4; 500 &#x6761;&#xFF0C;-1 &#x4E0D;&#x53D7;&#x9650;&#x5236;</span>
+        <span class="hljs-comment">// paginationInterceptor.setLimit(500);</span>
+        <span class="hljs-comment">// &#x5F00;&#x542F; count &#x7684; join &#x4F18;&#x5316;,&#x53EA;&#x9488;&#x5BF9;&#x90E8;&#x5206; left join</span>
+        paginationInterceptor.setCountSqlParser(<span class="hljs-keyword">new</span> JsqlParserCountOptimize(<span class="hljs-keyword">true</span>));
+        <span class="hljs-keyword">return</span> paginationInterceptor;
+    }
+}
+</code></pre>
+<p>&#x793A;&#x4F8B;&#xFF1A;</p>
+<pre><code>// &#x6D4B;&#x8BD5;&#x5206;&#x9875;&#x67E5;&#x8BE2;
+@Test
+public void testPage(){
+// &#x53C2;&#x6570;&#x4E00;&#xFF1A;&#x5F53;&#x524D;&#x9875;
+// &#x53C2;&#x6570;&#x4E8C;&#xFF1A;&#x9875;&#x9762;&#x5927;&#x5C0F;
+// &#x4F7F;&#x7528;&#x4E86;&#x5206;&#x9875;&#x63D2;&#x4EF6;&#x4E4B;&#x540E;&#xFF0C;&#x6240;&#x6709;&#x7684;&#x5206;&#x9875;&#x64CD;&#x4F5C;&#x4E5F;&#x53D8;&#x5F97;&#x7B80;&#x5355;&#x7684;&#xFF01;
+Page&lt;User&gt; page = new Page&lt;&gt;(2,5);
+userMapper.selectPage(page,null);
+page.getRecords().forEach(System.out::println);
+System.out.println(page.getTotal());
+}
+</code></pre><h4 id="&#x5220;&#x9664;&#x64CD;&#x4F5C;">&#x5220;&#x9664;&#x64CD;&#x4F5C;</h4>
+<p>1&#x3001;&#x6839;&#x636E; id &#x5220;&#x9664;&#x8BB0;&#x5F55;</p>
+<pre><code>// &#x6D4B;&#x8BD5;&#x5220;&#x9664;
+@Test
+public void testDeleteById(){
+userMapper.deleteById(1240620674645544965L);
+}
+// &#x901A;&#x8FC7;id&#x6279;&#x91CF;&#x5220;&#x9664;
+@Test
+public void testDeleteBatchId(){
+userMapper.deleteBatchIds(Arrays.asList(1240620674645544961L,124062067464554496
+2L));
+}
+// &#x901A;&#x8FC7;map&#x5220;&#x9664;
+@Test
+public void testDeleteMap(){
+HashMap&lt;String, Object&gt; map = new HashMap&lt;&gt;();
+map.put(&quot;name&quot;,&quot;&#x72C2;&#x795E;&#x8BF4;Java&quot;);
+userMapper.deleteByMap(map);
+}
+</code></pre><ol>
+<li><p>&#x903B;&#x8F91;&#x5220;&#x9664;</p>
+</li>
+<li><p>&#x7269;&#x7406;&#x5220;&#x9664; &#xFF1A;&#x4ECE;&#x6570;&#x636E;&#x5E93;&#x4E2D;&#x76F4;&#x63A5;&#x79FB;&#x9664; </p>
+</li>
+<li><p>&#x903B;&#x8F91;&#x5220;&#x9664; &#xFF1A;&#x518D;&#x6570;&#x636E;&#x5E93;&#x4E2D;&#x6CA1;&#x6709;&#x88AB;&#x79FB;&#x9664;&#xFF0C;&#x800C;&#x662F;&#x901A;&#x8FC7;&#x4E00;&#x4E2A;&#x53D8;&#x91CF;&#x6765;&#x8BA9;&#x4ED6;&#x5931;&#x6548;&#xFF01; deleted = 0 =&gt; deleted = 1</p>
+</li>
+<li>mybatis-plus &#x5728;&#x5C06;&#x5C5E;&#x6027;&#x8BBE;&#x5B9A;&#x4E3A;&#x903B;&#x8F91;&#x5220;&#x9664;&#x5C5E;&#x6027;&#x540E;&#xFF0C;&#x5220;&#x9664;&#x548C;select&#x8BED;&#x53E5;&#x4F1A;<strong>&#x81EA;&#x52A8;&#x6CE8;&#x5165;deleted = 0&#x5728;sql&#x8BED;&#x53E5;&#x540E;&#x9762;</strong></li>
+</ol>
+<blockquote>
+<p>&#x8BF4;&#x660E;:</p>
+<p>&#x53EA;&#x5BF9;&#x81EA;&#x52A8;&#x6CE8;&#x5165;&#x7684;sql&#x8D77;&#x6548;:</p>
+<ul>
+<li>&#x63D2;&#x5165;: &#x4E0D;&#x4F5C;&#x9650;&#x5236;</li>
+<li>&#x67E5;&#x627E;: &#x8FFD;&#x52A0;where&#x6761;&#x4EF6;&#x8FC7;&#x6EE4;&#x6389;&#x5DF2;&#x5220;&#x9664;&#x6570;&#x636E;,&#x4E14;&#x4F7F;&#x7528; wrapper.entity &#x751F;&#x6210;&#x7684;where&#x6761;&#x4EF6;&#x4F1A;&#x5FFD;&#x7565;&#x8BE5;&#x5B57;&#x6BB5;</li>
+<li>&#x66F4;&#x65B0;: &#x8FFD;&#x52A0;where&#x6761;&#x4EF6;&#x9632;&#x6B62;&#x66F4;&#x65B0;&#x5230;&#x5DF2;&#x5220;&#x9664;&#x6570;&#x636E;,&#x4E14;&#x4F7F;&#x7528; wrapper.entity &#x751F;&#x6210;&#x7684;where&#x6761;&#x4EF6;&#x4F1A;&#x5FFD;&#x7565;&#x8BE5;&#x5B57;&#x6BB5;</li>
+<li>&#x5220;&#x9664;: &#x8F6C;&#x53D8;&#x4E3A; &#x66F4;&#x65B0;</li>
+</ul>
+<p>&#x4F8B;&#x5982;:</p>
+<ul>
+<li>&#x5220;&#x9664;: <code>update user set deleted=1 where id = 1 and deleted=0</code></li>
+<li>&#x67E5;&#x627E;: <code>select id,name,deleted from user where deleted=0</code></li>
+</ul>
+<p>&#x5B57;&#x6BB5;&#x7C7B;&#x578B;&#x652F;&#x6301;&#x8BF4;&#x660E;:</p>
+<ul>
+<li>&#x652F;&#x6301;&#x6240;&#x6709;&#x6570;&#x636E;&#x7C7B;&#x578B;(&#x63A8;&#x8350;&#x4F7F;&#x7528; <code>Integer</code>,<code>Boolean</code>,<code>LocalDateTime</code>)</li>
+<li>&#x5982;&#x679C;&#x6570;&#x636E;&#x5E93;&#x5B57;&#x6BB5;&#x4F7F;&#x7528;<code>datetime</code>,&#x903B;&#x8F91;&#x672A;&#x5220;&#x9664;&#x503C;&#x548C;&#x5DF2;&#x5220;&#x9664;&#x503C;&#x652F;&#x6301;&#x914D;&#x7F6E;&#x4E3A;&#x5B57;&#x7B26;&#x4E32;<code>null</code>,&#x53E6;&#x4E00;&#x4E2A;&#x503C;&#x652F;&#x6301;&#x914D;&#x7F6E;&#x4E3A;&#x51FD;&#x6570;&#x6765;&#x83B7;&#x53D6;&#x503C;&#x5982;<code>now()</code></li>
+</ul>
+<p>&#x9644;&#x5F55;:</p>
+<ul>
+<li>&#x903B;&#x8F91;&#x5220;&#x9664;&#x662F;&#x4E3A;&#x4E86;&#x65B9;&#x4FBF;&#x6570;&#x636E;&#x6062;&#x590D;&#x548C;&#x4FDD;&#x62A4;&#x6570;&#x636E;&#x672C;&#x8EAB;&#x4EF7;&#x503C;&#x7B49;&#x7B49;&#x7684;&#x4E00;&#x79CD;&#x65B9;&#x6848;&#xFF0C;&#x4F46;&#x5B9E;&#x9645;&#x5C31;&#x662F;&#x5220;&#x9664;&#x3002;</li>
+<li>&#x5982;&#x679C;&#x4F60;&#x9700;&#x8981;&#x9891;&#x7E41;&#x67E5;&#x51FA;&#x6765;&#x770B;&#x5C31;&#x4E0D;&#x5E94;&#x4F7F;&#x7528;&#x903B;&#x8F91;&#x5220;&#x9664;&#xFF0C;&#x800C;&#x662F;&#x4EE5;&#x4E00;&#x4E2A;&#x72B6;&#x6001;&#x53BB;&#x8868;&#x793A;&#x3002;</li>
+</ul>
+</blockquote>
+<ul>
+<li>&#x4F7F;&#x7528;&#x65B9;&#x6CD5;</li>
+<li>&#x6B65;&#x9AA4;1: &#x914D;&#x7F6E;<code>com.baomidou.mybatisplus.core.config.GlobalConfig$DbConfig</code></li>
+</ul>
+<pre><code>yml:
+mybatis-plus:
+  global-config:
+    db-config:
+      logic-delete-field: flag  # &#x5168;&#x5C40;&#x903B;&#x8F91;&#x5220;&#x9664;&#x7684;&#x5B9E;&#x4F53;&#x5B57;&#x6BB5;&#x540D;(since 3.3.0,&#x914D;&#x7F6E;&#x540E;&#x53EF;&#x4EE5;&#x5FFD;&#x7565;&#x4E0D;&#x914D;&#x7F6E;&#x6B65;&#x9AA4;2)
+      logic-delete-value: 1 # &#x903B;&#x8F91;&#x5DF2;&#x5220;&#x9664;&#x503C;(&#x9ED8;&#x8BA4;&#x4E3A; 1)
+      logic-not-delete-value: 0 # &#x903B;&#x8F91;&#x672A;&#x5220;&#x9664;&#x503C;(&#x9ED8;&#x8BA4;&#x4E3A; 0)
+
+properties:
+mybatis-plus.global-config.db-config.logic-delete-field=flag# &#x5168;&#x5C40;&#x903B;&#x8F91;&#x5220;&#x9664;&#x7684;&#x5B9E;&#x4F53;&#x5B57;&#x6BB5;&#x540D;(since 3.3.0,&#x914D;&#x7F6E;&#x540E;&#x53EF;&#x4EE5;&#x5FFD;&#x7565;&#x4E0D;&#x914D;&#x7F6E;&#x6B65;&#x9AA4;2)
+mybatis-plus.global-config.db-config.logic-delete-value=1
+mybatis-plus.global-config.db-config.logic-not-delete-value=0
+</code></pre><p>&#x6B65;&#x9AA4;2: &#x5B9E;&#x4F53;&#x7C7B;&#x5B57;&#x6BB5;&#x4E0A;&#x52A0;&#x4E0A;<code>@TableLogic</code>&#x6CE8;&#x89E3;</p>
+<pre><code>@TableLogic
+private Integer deleted;
+</code></pre><h2 id="&#x6027;&#x80FD;&#x5206;&#x4EAB;&#x63D2;&#x4EF6;">&#x6027;&#x80FD;&#x5206;&#x4EAB;&#x63D2;&#x4EF6;</h2>
+<pre><code> &#x6211;&#x4EEC;&#x5728;&#x5E73;&#x65F6;&#x7684;&#x5F00;&#x53D1;&#x4E2D;&#xFF0C;&#x4F1A;&#x9047;&#x5230;&#x4E00;&#x4E9B;&#x6162;sql&#x3002;&#x6D4B;&#x8BD5;&#xFF01; druid,,,,, 
+</code></pre><p>&#x4F5C;&#x7528;&#xFF1A;&#x6027;&#x80FD;&#x5206;&#x6790;&#x62E6;&#x622A;&#x5668;&#xFF0C;&#x7528;&#x4E8E;&#x8F93;&#x51FA;&#x6BCF;&#x6761; SQL &#x8BED;&#x53E5;&#x53CA;&#x5176;&#x6267;&#x884C;&#x65F6;&#x95F4; MP&#x4E5F;&#x63D0;&#x4F9B;&#x6027;&#x80FD;&#x5206;&#x6790;&#x63D2;&#x4EF6;&#xFF0C;&#x5982;&#x679C;&#x8D85;&#x8FC7;&#x8FD9;&#x4E2A;&#x65F6;&#x95F4;&#x5C31;&#x505C;&#x6B62;&#x8FD0;&#x884C;&#xFF01;</p>
+<p> 1&#x3001;&#x5BFC;&#x5165;&#x63D2;&#x4EF6;(&#x8BB0;&#x4F4F;&#xFF0C;&#x8981;&#x5728;SpringBoot&#x4E2D;&#x914D;&#x7F6E;&#x73AF;&#x5883;&#x4E3A;dev&#x6216;&#x8005; test &#x73AF;&#x5883;&#xFF01;)</p>
+<pre><code>/**
+* SQL&#x6267;&#x884C;&#x6548;&#x7387;&#x63D2;&#x4EF6;
+*/
+@Bean
+@Profile({&quot;dev&quot;,&quot;test&quot;})// &#x8BBE;&#x7F6E; dev test &#x73AF;&#x5883;&#x5F00;&#x542F;&#xFF0C;&#x4FDD;&#x8BC1;&#x6211;&#x4EEC;&#x7684;&#x6548;&#x7387;
+public PerformanceInterceptor performanceInterceptor() {
+PerformanceInterceptor performanceInterceptor = new
+PerformanceInterceptor();
+performanceInterceptor.setMaxTime(100); // ms&#x8BBE;&#x7F6E;sql&#x6267;&#x884C;&#x7684;&#x6700;&#x5927;&#x65F6;&#x95F4;&#xFF0C;&#x5982;&#x679C;&#x8D85;&#x8FC7;&#x4E86;&#x5219;&#x4E0D;
+&#x6267;&#x884C;
+performanceInterceptor.setFormat(true); // &#x662F;&#x5426;&#x683C;&#x5F0F;&#x5316;&#x4EE3;&#x7801;
+return performanceInterceptor;
+}
+</code></pre><p><img src="F:\Typora&#x6570;&#x636E;&#x50A8;&#x5B58;\&#x6570;&#x636E;&#x5E93;\mybatisPlus.assets\image-20200801110504880.png" alt="image-20200801110504880"></p>
+<h2 id="&#x6761;&#x4EF6;&#x6784;&#x9020;&#x5668;">&#x6761;&#x4EF6;&#x6784;&#x9020;&#x5668;</h2>
+<p>QueryWrapper(LambdaQueryWrapper) &#x548C; UpdateWrapper(LambdaUpdateWrapper) &#x7684;&#x7236;&#x7C7B;
+<strong>&#x7528;&#x4E8E;&#x751F;&#x6210; sql &#x7684; where &#x6761;&#x4EF6;</strong>, entity &#x5C5E;&#x6027;&#x4E5F;&#x7528;&#x4E8E;&#x751F;&#x6210; sql &#x7684; where &#x6761;&#x4EF6;
+&#x6CE8;&#x610F;: entity &#x751F;&#x6210;&#x7684; where &#x6761;&#x4EF6;&#x4E0E; &#x4F7F;&#x7528;&#x5404;&#x4E2A; api &#x751F;&#x6210;&#x7684; where &#x6761;&#x4EF6;<strong>&#x6CA1;&#x6709;&#x4EFB;&#x4F55;&#x5173;&#x8054;&#x884C;&#x4E3A;</strong></p>
+<p><img src="F:\Typora&#x6570;&#x636E;&#x50A8;&#x5B58;\&#x6570;&#x636E;&#x5E93;\mybatisPlus.assets\image-20200801154305608.png" alt="image-20200801154305608"></p>
+<h2 id="&#x4EE3;&#x7801;&#x751F;&#x6210;&#x5668;">&#x4EE3;&#x7801;&#x751F;&#x6210;&#x5668;</h2>
+<p>dao&#x3001;pojo&#x3001;service&#x3001;controller&#x90FD;&#x7ED9;&#x6211;&#x81EA;&#x5DF1;&#x53BB;&#x7F16;&#x5199;&#x5B8C;&#x6210;&#xFF01; AutoGenerator &#x662F; MyBatis-Plus &#x7684;&#x4EE3;&#x7801;&#x751F;&#x6210;&#x5668;&#xFF0C;&#x901A;&#x8FC7; AutoGenerator &#x53EF;&#x4EE5;&#x5FEB;&#x901F;&#x751F;&#x6210; Entity&#x3001; Mapper&#x3001;Mapper XML&#x3001;Service&#x3001;Controller &#x7B49;&#x5404;&#x4E2A;&#x6A21;&#x5757;&#x7684;&#x4EE3;&#x7801;&#xFF0C;&#x6781;&#x5927;&#x7684;&#x63D0;&#x5347;&#x4E86;&#x5F00;&#x53D1;&#x6548;&#x7387;&#x3002;</p>
+<pre><code class="lang-java">import com.baomidou.mybatisplus.annotation.DbType;
+import com.baomidou.mybatisplus.annotation.FieldFill;
+import com.baomidou.mybatisplus.annotation.IdType;
+import com.baomidou.mybatisplus.annotation.TableField;
+import com.baomidou.mybatisplus.generator.AutoGenerator;
+import com.baomidou.mybatisplus.generator.config.DataSourceConfig;
+import com.baomidou.mybatisplus.generator.config.GlobalConfig;
+import com.baomidou.mybatisplus.generator.config.PackageConfig;
+import com.baomidou.mybatisplus.generator.config.StrategyConfig;
+import com.baomidou.mybatisplus.generator.config.po.TableFill;
+import com.baomidou.mybatisplus.generator.config.rules.DateType;
+import com.baomidou.mybatisplus.generator.config.rules.NamingStrategy;
+import java.util.ArrayList;
+// &#x4EE3;&#x7801;&#x81EA;&#x52A8;&#x751F;&#x6210;&#x5668;
+public class KuangCode {
+public static void main(String[] args) {
+// &#x9700;&#x8981;&#x6784;&#x5EFA;&#x4E00;&#x4E2A; &#x4EE3;&#x7801;&#x81EA;&#x52A8;&#x751F;&#x6210;&#x5668; &#x5BF9;&#x8C61;
+AutoGenerator mpg = new AutoGenerator();
+// &#x914D;&#x7F6E;&#x7B56;&#x7565;
+// 1&#x3001;&#x5168;&#x5C40;&#x914D;&#x7F6E;
+GlobalConfig gc = new GlobalConfig();
+String projectPath = System.getProperty(&quot;user.dir&quot;);
+gc.setOutputDir(projectPath+&quot;/src/main/java&quot;);
+gc.setAuthor(&quot;&#x72C2;&#x795E;&#x8BF4;&quot;);
+gc.setOpen(false);
+gc.setFileOverride(false); // &#x662F;&#x5426;&#x8986;&#x76D6;
+gc.setServiceName(&quot;%sService&quot;); // &#x53BB;Service&#x7684;I&#x524D;&#x7F00;
+gc.setIdType(IdType.ID_WORKER);
+gc.setDateType(DateType.ONLY_DATE);
+gc.setSwagger2(true);
+mpg.setGlobalConfig(gc);
+//2&#x3001;&#x8BBE;&#x7F6E;&#x6570;&#x636E;&#x6E90;
+DataSourceConfig dsc = new DataSourceConfig();
+dsc.setUrl(&quot;jdbc:mysql://localhost:3306/kuang_community?
+useSSL=false&amp;useUnicode=true&amp;characterEncoding=utf-8&amp;serverTimezone=GMT%2B8&quot;);
+dsc.setDriverName(&quot;com.mysql.cj.jdbc.Driver&quot;);
+dsc.setUsername(&quot;root&quot;);
+dsc.setPassword(&quot;123456&quot;);
+dsc.setDbType(DbType.MYSQL);
+mpg.setDataSource(dsc);
+//3&#x3001;&#x5305;&#x7684;&#x914D;&#x7F6E;
+PackageConfig pc = new PackageConfig();
+pc.setModuleName(&quot;blog&quot;);
+pc.setParent(&quot;com.kuang&quot;);
+pc.setEntity(&quot;entity&quot;);
+pc.setMapper(&quot;mapper&quot;);
+pc.setService(&quot;service&quot;);
+pc.setController(&quot;controller&quot;);
+mpg.setPackageInfo(pc);
+//4&#x3001;&#x7B56;&#x7565;&#x914D;&#x7F6E;
+StrategyConfig strategy = new StrategyConfig();
+strategy.setInclude(&quot;blog_tags&quot;,&quot;course&quot;,&quot;links&quot;,&quot;sys_settings&quot;,&quot;user_record&quot;,&quot;
+user_say&quot;); // &#x8BBE;&#x7F6E;&#x8981;&#x6620;&#x5C04;&#x7684;&#x8868;&#x540D;
+strategy.setNaming(NamingStrategy.underline_to_camel);
+strategy.setColumnNaming(NamingStrategy.underline_to_camel);
+strategy.setEntityLombokModel(true); // &#x81EA;&#x52A8;lombok&#xFF1B;
+strategy.setLogicDeleteFieldName(&quot;deleted&quot;);
+// &#x81EA;&#x52A8;&#x586B;&#x5145;&#x914D;&#x7F6E;
+TableFill gmtCreate = new TableFill(&quot;gmt_create&quot;, FieldFill.INSERT);
+TableFill gmtModified = new TableFill(&quot;gmt_modified&quot;,
+FieldFill.INSERT_UPDATE);
+ArrayList&lt;TableFill&gt; tableFills = new ArrayList&lt;&gt;();
+tableFills.add(gmtCreate);
+tableFills.add(gmtModified);
+strategy.setTableFillList(tableFills);
+// &#x4E50;&#x89C2;&#x9501;
+strategy.setVersionFieldName(&quot;version&quot;);
+strategy.setRestControllerStyle(true);
+strategy.setControllerMappingHyphenStyle(true); //
+localhost:8080/hello_id_2
+mpg.setStrategy(strategy);
+mpg.execute(); //&#x6267;&#x884C;
+}
+}
+</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"MybatisPlus","level":"1.7","depth":1,"next":{"title":"Mysql.Assets","level":"1.8","depth":1,"ref":"","articles":[]},"previous":{"title":"MybatisPlus.Assets","level":"1.6","depth":1,"ref":"","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["summary"],"pluginsConfig":{"summary":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"数据库/mybatisPlus.md","mtime":"2020-08-01T09:31:32.055Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-08-07T08:00:57.642Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
